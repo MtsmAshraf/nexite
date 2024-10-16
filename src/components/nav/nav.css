@@ -2,8 +2,8 @@
 /* start nav */
 nav{
   position: fixed;
-  bottom: 50%;
-  transform: translateY(50%);
+  top: 50%;
+  transform: translateY(-50%);
   right: 0px;
   z-index: 13;
   font-family: "Federo",sans-serif;
