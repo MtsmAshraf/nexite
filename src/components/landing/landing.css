@@ -1,0 +1,207 @@
+.landing{
+padding-top: 150px;
+height: 100vh;
+position: relative;
+background-image: url(../../../public/assets/images/hero-bg.svg);
+background-size: 150%;
+background-repeat: no-repeat;
+animation: change-gradient 5s linear 0s infinite forwards alternate;
+position: relative;
+}
+.landing .container{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.landing .container > div{
+height: 100%;
+}
+.landing .container .text{
+width: 40%;
+/* margin-right: 200px; */
+}
+.landing .container .text *{
+/* transition: var(--main-transition); */
+/* transition-duration: 0.5s; */
+/* opacity: 0; */
+}
+.landing.animate .container .text *{
+transform: translateY(0px);
+opacity: 1;
+}
+.landing .container .text > h2{
+font-size: 60px;
+font-family: "Federo",sans-serif;
+letter-spacing: 5px;
+font-weight: bold;
+/* width: 300px; */
+color: var(--sec-color);
+font-weight: bold;
+margin-bottom: 0px;
+transition: all 0.2s 0s linear;
+/* background-image: linear-gradient(45deg, white 10% ,var(--sec-color) 100%); */
+animation:  change-gradient 5s linear 0s infinite forwards alternate;
+background-size: 150%;
+background-position: top;
+/* -webkit-background-clip: text; */
+/* -webkit-text-fill-color: transparent; */
+color: var(--sec-color);
+}
+.landing .container .text > p{
+font-size: 18px;
+color: white;
+line-height: 1.4;
+}
+.landing .container .text p a{
+font-weight: bold;
+font-size: 20px;
+}
+.landing .container .text  p a:hover{
+text-decoration: underline;
+}
+.landing .container .text .skills-icons{
+margin-top: 20px;
+display: flex;
+gap: 10px;
+}
+.landing .container .text .skills-icons span{
+width: 80px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+background-color: var(--sec-color-trans);
+isolation: isolate;
+padding: 4px;
+border-radius: 50%;
+}
+.landing .container .text .skills-icons img{
+width: 50px;
+object-fit: contain;
+}
+.landing .container > .img{
+height: 450px;
+width: 450px;
+/* overflow: hidden; */
+border-radius: 4px;
+position: absolute;
+bottom: 0;
+right: 250px;
+}
+.landing .container > .img  img{
+transition: var(--main-transition);
+object-fit: contain;
+transform: scale(1.5);
+transform-origin: 50% 100%;
+}
+.landing .container > .img::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+top: -60px;
+left: 30px;
+border: 1px solid white;
+z-index: 2;
+border-radius: 10px;
+animation: frame-rotate 30s linear 0s infinite;
+}
+@keyframes frame-rotate {
+0%{
+    transform: rotateZ(0);
+}
+100%{
+    transform: rotateZ(360deg);
+}
+}
+.landing .container > .img .dots-img:not(:last-child){
+position: absolute;
+top:-50px;
+left:-50px;
+}
+.landing .container > .img .dots-img:last-child{
+position: absolute;
+bottom: -150px;
+right:-150px;
+}
+.landing .container > .img .dots-img:last-child div{
+background-color: var(--main-color);
+}
+.landing .container > .img img{
+position: relative;
+height: 100%;
+width: 100%;
+z-index: 3;
+}
+@media (max-width:992px) {
+.landing .bottom{
+    flex-direction: column;
+}
+.landing .bottom p:first-of-type{
+    margin-bottom: 20px;
+}
+}
+@media (max-width:992px) {
+.landing {
+    background-image: linear-gradient(to bottom, var(--main-color) 50% ,var(--sec-color) 100% 100% );
+    height: fit-content;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+.landing .container {
+    flex-direction: column;
+}
+.landing .container .text{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 100px;
+}
+.landing .bottom{
+    flex-direction: row;
+    /* margin-top: 60px !important; */
+}
+.landing .bottom p{
+    font-size: 10px !important;
+}
+.landing .container > .img{
+    width: 250px;
+    height: 250px;
+}
+.landing .container > .img img{
+    width: 250px;
+    height:250px;
+}
+header .container i{
+    color: var(--sec-color);
+}
+/* .landing .dots-img{
+    display: none;
+} */
+}
+@media (max-width:992px){
+    .landing .text{
+        text-align: center;
+    }
+    .landing h2{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .landing .text .bottom{
+        justify-content: center;
+    }
+
+    .landing .container > .img{
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+@media (max-width: 600px){
+    .landing .container .text .skills-icons img{
+        width: 30px;
+    }
+    .landing .text .bottom p a{
+        font-size: 14px;
+    }
+}
+/* end landing */
