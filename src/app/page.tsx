@@ -16,7 +16,7 @@ import HScrollbar from "@/components/hScrollbar/hScrollbar";
 export default function Home() {
 
   return (
-    <div>
+    <main>
         {/* <div className="cursor" />
         <div className="cursor2" /> */}
         {/* <div className="loader">
@@ -38,6 +38,6 @@ export default function Home() {
         <Testimonials />
         <Contact />
         <Footer />
-    </div>
+    </main>
   );
 }
