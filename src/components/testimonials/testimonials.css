@@ -101,6 +101,7 @@
   }
   .testimonials .container .person .img img{
     max-width: 100%;
+    object-fit: contain;
   }
   .testimonials .container .person p{
     position: relative;
@@ -127,10 +128,6 @@
     padding-bottom: 20px;
     height: 200px;
     opacity: 1;
-  }
-  .testimonials .container .person p.arabic{
-  }
-  .testimonials .container .person p{
   }
   .testimonials .container .person .person-info{
     padding: 20px;

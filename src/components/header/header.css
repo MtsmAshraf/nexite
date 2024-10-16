@@ -10,7 +10,6 @@
   }
   .header a{
     /* height: 100px; */
-    /* background-color: red; */
     width: 180px;
     overflow: hidden;
     transition: all 0.4s 0s ease-in-out;
@@ -36,7 +35,6 @@
   @media (max-width:767px) {
     .header{
         padding-left: 0;
-        padding-right: 40px;
     }
   }
   /* end header */

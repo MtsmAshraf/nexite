@@ -162,7 +162,7 @@ const Skills = () => {
         <div className="overlay" />
         <div className="container">
         <div className="box">
-            <h2>I build &amp; design stuff</h2>
+            <h2>I design &amp; build stuff</h2>
             <p>
             Personal, Company, Events, Dashboard and More with different styles,
             ideas and catergories. <br />
