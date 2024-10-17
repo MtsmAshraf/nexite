@@ -1,7 +1,7 @@
 import { faLink, faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
-import React, { useCallback, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 
 import image12 from "../../../public/assets/images/thrive-ai.jpg"
 import image13 from "../../../public/assets/images/logos/icons8-react-16.png"
@@ -35,7 +35,7 @@ const Hero = () => {
     },[])
     const scrollHeroItemOne = useCallback(() => {
         if(heroItemOne.current){
-            if(heroItemOne.current.offsetTop <= window.scrollY + 400){
+            if(heroItemOne.current.offsetTop <= scrollY + 400){
                 setScrolledOne(true)
             }else{
                 setScrolledOne(false)
@@ -44,16 +44,18 @@ const Hero = () => {
         },[])
         const scrollHeroItemTwo = useCallback(() => {
             if(heroItemTwo.current){
-                if(heroItemTwo.current.offsetTop <= window.scrollY + 400){
+                if(heroItemTwo.current.offsetTop <= scrollY + 400){
                     setScrolledTwo(true)
                 }else{
                     setScrolledTwo(false)
                 }
             }
         },[])
-        window.addEventListener("scroll", scrollSection)
-        window.addEventListener("scroll",scrollHeroItemOne)
-        window.addEventListener("scroll",scrollHeroItemTwo)
+        useEffect(() => {
+            window.addEventListener("scroll", scrollSection)
+            window.addEventListener("scroll",scrollHeroItemOne)
+            window.addEventListener("scroll",scrollHeroItemTwo)
+        })
     
   return (
     <section ref={heroSection} className={scrolled ? "hero" + " " + "scrolled" : "hero"} id="latest">

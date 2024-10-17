@@ -1,4 +1,4 @@
-import React, { useCallback, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 
 import "./skills.css"
 import { faArrowRight, faXmark } from '@fortawesome/free-solid-svg-icons'
@@ -29,7 +29,7 @@ const Skills = () => {
     const boxTwo: any = useRef()
     const scrollboxOne = useCallback(() => {
         if(boxOne.current){
-            if(boxOne.current.offsetTop <= window.scrollY + 350){
+            if(boxOne.current.offsetTop <= scrollY + 350){
                 setScrolledOne(true)
             }else{
                 setScrolledOne(false)
@@ -38,15 +38,17 @@ const Skills = () => {
     },[])
     const scrollboxTwo = useCallback(() => {
         if(boxTwo.current){
-            if(boxTwo.current.offsetTop <= window.scrollY + 350){
+            if(boxTwo.current.offsetTop <= scrollY + 350){
                 setScrolledTwo(true)
             }else{
                 setScrolledTwo(false)
             }
         }
     },[])
-    window.addEventListener("scroll",scrollboxOne)
-    window.addEventListener("scroll",scrollboxTwo)
+    useEffect(()=> {
+        window.addEventListener("scroll",scrollboxOne)
+        window.addEventListener("scroll",scrollboxTwo)
+    })
 
 
     // ########################################
