@@ -7,7 +7,7 @@ const Loader = () => {
     const [loaded, setLoaded] = useState(false)
     useEffect(() => {
         setLoaded(true)
-    })
+    },[])
   return (
     <div className={loaded ? "loader" + " " + "loaded": "loader"}>
         <FontAwesomeIcon icon={faLessThan} />
