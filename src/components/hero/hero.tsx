@@ -1,7 +1,7 @@
 import { faLink, faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
-import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import React, { useCallback, useRef, useState } from 'react'
 
 import image12 from "../../../public/assets/images/thrive-ai.jpg"
 import image13 from "../../../public/assets/images/logos/icons8-react-16.png"
@@ -21,30 +21,36 @@ const Hero = () => {
     const [scrolled, setScrolled] = useState(false)
     const [scrolledOne, setScrolledOne] = useState(false)
     const [scrolledTwo, setScrolledTwo] = useState(false)
-    let heroSection: any = useRef()
-    let heroItemOne: any = useRef()
-    let heroItemTwo: any = useRef()
-    let scrollSection = useCallback(() => {
-        if(heroSection.current.offsetTop <= window.scrollY + 400){
-            setScrolled(true)
-        }else{
-            setScrolled(false)
+    const heroSection: any = useRef()
+    const heroItemOne: any = useRef()
+    const heroItemTwo: any = useRef()
+    const scrollSection = useCallback(() => {
+        if(heroSection.current){
+            if(heroSection.current.offsetTop <= window.scrollY + 400){
+                setScrolled(true)
+            }else{
+                setScrolled(false)
+            }
         }
-    },[scrolled])
-    let scrollHeroItemOne = useCallback(() => {
-        if(heroItemOne.current.offsetTop <= window.scrollY + 400){
+    },[])
+    const scrollHeroItemOne = useCallback(() => {
+        if(heroItemOne.current){
+            if(heroItemOne.current.offsetTop <= window.scrollY + 400){
                 setScrolledOne(true)
             }else{
                 setScrolledOne(false)
             }
-        },[scrolledOne])
-        let scrollHeroItemTwo = useCallback(() => {
-            if(heroItemTwo.current.offsetTop <= window.scrollY + 400){
-                setScrolledTwo(true)
-            }else{
-                setScrolledTwo(false)
+        }
+        },[])
+        const scrollHeroItemTwo = useCallback(() => {
+            if(heroItemTwo.current){
+                if(heroItemTwo.current.offsetTop <= window.scrollY + 400){
+                    setScrolledTwo(true)
+                }else{
+                    setScrolledTwo(false)
+                }
             }
-        },[scrolledTwo])
+        },[])
         window.addEventListener("scroll", scrollSection)
         window.addEventListener("scroll",scrollHeroItemOne)
         window.addEventListener("scroll",scrollHeroItemTwo)

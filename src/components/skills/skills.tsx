@@ -25,24 +25,28 @@ const Skills = () => {
     
     const [scrolledOne, setScrolledOne] = useState(false)
     const [scrolledTwo, setScrolledTwo] = useState(false)
-    let boxOne: any = useRef()
-    let boxTwo: any = useRef()
-    let scrollboxOne = useCallback(() => {
-        if(boxOne.current.offsetTop <= window.scrollY + 350){
+    const boxOne: any = useRef()
+    const boxTwo: any = useRef()
+    const scrollboxOne = useCallback(() => {
+        if(boxOne.current){
+            if(boxOne.current.offsetTop <= window.scrollY + 350){
                 setScrolledOne(true)
             }else{
                 setScrolledOne(false)
             }
-        },[scrolledOne])
-        let scrollboxTwo = useCallback(() => {
+        }
+    },[])
+    const scrollboxTwo = useCallback(() => {
+        if(boxTwo.current){
             if(boxTwo.current.offsetTop <= window.scrollY + 350){
                 setScrolledTwo(true)
             }else{
                 setScrolledTwo(false)
             }
-        },[scrolledTwo])
-        window.addEventListener("scroll",scrollboxOne)
-        window.addEventListener("scroll",scrollboxTwo)
+        }
+    },[])
+    window.addEventListener("scroll",scrollboxOne)
+    window.addEventListener("scroll",scrollboxTwo)
 
 
     // ########################################
