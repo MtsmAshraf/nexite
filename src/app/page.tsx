@@ -12,23 +12,16 @@ import Nav from "@/components/nav/nav";
 import Contact from "@/components/contact/contact";
 import Footer from "@/components/footer/footer";
 import HScrollbar from "@/components/hScrollbar/hScrollbar";
-
+import Loader from "@/components/loader/loader";
 export default function Home() {
 
   return (
     <main>
         {/* <div className="cursor" />
         <div className="cursor2" /> */}
-        {/* <div className="loader">
-          <i className="fa-solid fa-less-than" />
-          <ul>
-            <li />
-            <li />
-            <li />
-          </ul>
-          <i className="fa-solid fa-greater-than" />
-        </div> */}
+        {/*  */}
         
+        <Loader />
         <HScrollbar />
         <Header />
         <Nav />
