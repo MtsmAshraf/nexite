@@ -17,8 +17,17 @@ justify-content: space-between;
 height: 100%;
 }
 .landing .container .text{
-width: 40%;
+    width: 40%;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: var(--main-transition);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
 /* margin-right: 200px; */
+}
+.landing.loaded .container .text{
+    opacity: 1;
+    transform: translateX(0px);
 }
 .landing .container .text *{
 /* transition: var(--main-transition); */
@@ -67,17 +76,65 @@ flex-wrap: wrap;
 gap: 10px;
 }
 .landing .container .text .skills-icons span{
-/* width: 80px; */
-height: 40px;
-aspect-ratio: 1/1;
-display: flex;
-align-items: center;
-justify-content: center;
-position: relative;
-background-color: var(--sec-color-trans);
-isolation: isolate;
-padding: 4px;
-border-radius: 50%;
+    /* width: 80px; */
+    height: 40px;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--sec-color-trans);
+    isolation: isolate;
+    padding: 4px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: var(--main-transition);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+}
+.landing.loaded .container .text .skills-icons span{
+    opacity: 1;
+    transform: translateX(-0px);
+}
+.landing.loaded .container .text .skills-icons span:nth-child(1){
+    transition-delay: 0s;
+}
+.landing.loaded .container .text .skills-icons span:nth-child(2){
+    transition-delay: 0.1s;
+}
+.landing.loaded .container .text .skills-icons span:nth-child(3){
+    transition-delay: 0.2s;
+}
+.landing.loaded .container .text .skills-icons span:nth-child(4){
+    transition-delay: 0.3s;
+}
+.landing.loaded .container .text .skills-icons span:nth-child(5){
+    transition-delay: 0.4s;
+}
+.landing.loaded .container .text .skills-icons span:nth-child(6){
+    transition-delay: 0.5s;
+}
+.landing.loaded .container .text .skills-icons span:nth-child(7){
+    transition-delay: 0.6s;
+}
+.landing.loaded .container .text .skills-icons span:nth-child(8){
+    transition-delay: 0.7s;
+}
+.landing.loaded .container .text .skills-icons span:nth-child(9){
+    transition-delay: 0.8s;
+}
+.landing .main-social-links{
+    opacity: 0;
+    transform: translateY(40px);
+    transition: var(--main-transition);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.8s;
+}
+.landing.loaded .main-social-links{
+    opacity: 1;
+    transform: translateY(0px);
 }
 .landing .container .text .skills-icons img{
 width: 50px;
@@ -208,7 +265,7 @@ header .container i{
     }
     .landing .container .text .skills-icons{
         padding-left: 20px;
-        padding-right: 20px;
+        padding-rightn: 20px;
     }
 }
 /* end landing */

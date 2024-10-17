@@ -4,10 +4,16 @@
     /* overflow: hidden; */
     position: fixed;
     left: 50%;
-    transform: translateX(-50%);
-    top: 0;
+    transform: translateX(-50%) translateY(-120%);
+    top: -0px;
     z-index: 10;
+    transition: var(--main-transition);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
   }
+.header.loaded{
+    transform: translateX(-50%) translateY(0%);
+}
   .header a{
     /* height: 100px; */
     width: 180px;

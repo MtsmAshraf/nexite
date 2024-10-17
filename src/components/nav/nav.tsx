@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./nav.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode, faCommentDots, faHouse, faPhone, faStar } from '@fortawesome/free-solid-svg-icons'
 const Nav = () => {
+    const [loaded, setLoaded] = useState(false)
+  useEffect(() => {
+        setTimeout(() => {
+        setLoaded(true)
+        }, 1800);
+  },[])
   return (
-    <nav>
+    <nav className={loaded ? "loaded": ""}>
         <ul>
             <li className="active">
                 <a href="#home">

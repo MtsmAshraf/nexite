@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./landing.css"
 import image2 from "../../../public/assets/images/logos/icons8-react-16.png"
 import image3 from "../../../public/assets/images/logos/html5-logo-31813.png"
@@ -14,8 +14,15 @@ import image11 from "../../../public/assets/images/profile-removebg-preview.png"
 import SocialUl from '../socialUl/socialUl'
 
 const Landing = () => {
+    
+    const [loaded, setLoaded] = useState(false)
+    useEffect(() => {
+            setTimeout(() => {
+            setLoaded(true)
+            }, 700);
+    },[])
   return (
-    <section className="landing" id="home">
+    <section className={loaded ? "landing" + " " + "loaded": "landing"} id="home">
         <div className="container">
         <div className="text">
             <h2 style={{ height: 200 }}>Moatasim Ashraf</h2>

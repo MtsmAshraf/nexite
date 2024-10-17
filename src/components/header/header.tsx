@@ -1,11 +1,17 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import image1 from "../../../public/assets/images/Logo-noBg.png"
 import "./header.css"
 import Link from 'next/link'
 const Header = () => {
+  const [loaded, setLoaded] = useState(false)
+  useEffect(() => {
+      setTimeout(() => {
+        setLoaded(true)
+      }, 500);
+  },[])
   return (
-    <header className="header">
+    <header className={loaded ? "header" + " " + "loaded": "header"}>
         <Link href="/">
         <Image src={image1} alt="Image" loading={"lazy"}></Image>
         </Link>
