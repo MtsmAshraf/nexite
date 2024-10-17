@@ -1,13 +1,56 @@
-import React from 'react'
+import React, { useCallback, useRef, useState } from 'react'
 
 import "./skills.css"
+import { faArrowRight, faXmark } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Skills = () => {
+    const [showWork, setShowWork] = useState(false)
+    const [showApps, setShowApps] = useState(false)
+    const openWork = () => {
+        setShowWork(true)
+    }
+    const closeWork = () => {
+        setShowWork(false)
+    }
+    const openApps = () => {
+        setShowApps(true)
+    }
+    const closeApps = () => {
+        setShowApps(false)
+    }
+
+    // ########################################
+
+    
+    const [scrolledOne, setScrolledOne] = useState(false)
+    const [scrolledTwo, setScrolledTwo] = useState(false)
+    let boxOne: any = useRef()
+    let boxTwo: any = useRef()
+    let scrollboxOne = useCallback(() => {
+        if(boxOne.current.offsetTop <= window.scrollY + 350){
+                setScrolledOne(true)
+            }else{
+                setScrolledOne(false)
+            }
+        },[scrolledOne])
+        let scrollboxTwo = useCallback(() => {
+            if(boxTwo.current.offsetTop <= window.scrollY + 350){
+                setScrolledTwo(true)
+            }else{
+                setScrolledTwo(false)
+            }
+        },[scrolledTwo])
+        window.addEventListener("scroll",scrollboxOne)
+        window.addEventListener("scroll",scrollboxTwo)
+
+
+    // ########################################
   return (
     <section className="skills parallax" id="skills">
-        <div className="other-work">
+        <div className={showWork ? "other-work" + " " + "shown": "other-work"}>
         <h1>My Work</h1>
-        <i className="fa-solid fa-xmark" />
+        <FontAwesomeIcon onClick={() => {closeWork()}} icon={faXmark} />
         {/* <h2>My Work</h2> */}
         <div className="other-work-links">
             <div className="vuertfolio">
@@ -101,9 +144,9 @@ const Skills = () => {
             </div> */}
         </div>
         </div>
-        <div className="apps">
+        <div className={showApps ? "apps" + " " + "shown": "apps"}>
         <h1>My Apps</h1>
-        <i className="fa-solid fa-xmark" />
+        <FontAwesomeIcon onClick={() => {closeApps()}} icon={faXmark} />
         <div className="apps-links">
             <div className="url-shrtr">
             <a href="https://url-shrtr.netlify.app/" target="_blank">
@@ -161,19 +204,19 @@ const Skills = () => {
         </div>
         <div className="overlay" />
         <div className="container">
-        <div className="box">
+        <div className={scrolledOne ? "box" + " " + "scrolled" : "box"} ref={boxOne}>
             <h2>I design &amp; build stuff</h2>
             <p>
             Personal, Company, Events, Dashboard and More with different styles,
             ideas and catergories. <br />
             Check them out!
             </p>
-            <button>
-            <span>SEE MY WORK </span>
-            <i className="fa-solid fa-arrow-right" />
+            <button onClick={() => {openWork()}}>
+                <span>SEE MY WORK </span>
+                <FontAwesomeIcon icon={faArrowRight} />
             </button>
         </div>
-        <div className="box">
+        <div className={scrolledTwo ? "box" + " " + "scrolled" : "box"} ref={boxTwo}>
             <h2>I also build apps and games</h2>
             <p>
             Simple apps which is usable on phone by converting it to an IOS or
@@ -181,9 +224,9 @@ const Skills = () => {
             question-diverse. <br />
             Check them out
             </p>
-            <button className="game">
-            <span>SHOW APPS</span>
-            <i className="fa-solid fa-arrow-right" />
+            <button onClick={() => {openApps()}} className="game">
+                <span>SHOW APPS</span>
+                <FontAwesomeIcon icon={faArrowRight} />
             </button>
         </div>
         </div>

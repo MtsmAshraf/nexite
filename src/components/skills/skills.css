@@ -7,10 +7,10 @@
   align-items: center;
   justify-content: center;
   /* background-image: url(../../../public/assets/images/skills.jpg); */
+
   background-size: cover;
   background-attachment: fixed;
   /* background-repeat: no-repeat; */
-  position: relative;
   height: fit-content;
 }
 .skills .container{
@@ -23,8 +23,14 @@
   padding-bottom: 100px;
   width: 100%;
   text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: var(--main-transition);
 }
-
+.skills .container .box.scrolled{
+  opacity: 1;
+  transform: translateY(0px);
+}
 .skills .container .box:first-of-type{
   border-bottom: 1px solid var(--sec-color);
 }
@@ -55,8 +61,6 @@
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-  height: 0px;
-  padding: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,6 +70,17 @@
   transition: all 0.5s 0s ease-in-out;
   overflow: hidden;
   border: none;
+  height: 0;
+  padding: 0;
+  font-family: "Federo",sans-serif;
+  
+}
+.skills .other-work.shown{
+  height: calc(100% - 40px);
+  padding: 40px;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  box-shadow: 2px 2px 24px -2px var(--sec-color);
 }
 .skills .other-work h1{
   position: absolute;
@@ -73,6 +88,7 @@
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   font-family: "Dancing Script",sans-serif;
+  font-family: "Federo",sans-serif;
   font-size: 250px;
   width: 100%;
   text-align: center;
@@ -80,7 +96,7 @@
   opacity: 0.6;
   color: var(--main-color);
 }
-.skills .other-work > i{
+.skills .other-work > svg{
   position: absolute;
   top: 20px;
   right: 20px;
@@ -101,6 +117,10 @@
   border-top: 2px solid var(--main-color);
   border-bottom: 2px solid var(--main-color);
   background-image: linear-gradient(to bottom, var(--main-color) 20% ,transparent 40%);
+}
+.skills .other-work.shown .other-work-links{
+  transform: translateY(0px);
+  opacity: 1;
 }
 @media (max-width:992px) {
   .skills .other-work .other-work-links{
@@ -130,6 +150,7 @@
   align-items: center;
   justify-content: center;
   font-family: "Dancing Script",sans-serif;
+  font-family: "Federo",sans-serif;
   font-size: 28px;
   color: rgb(213, 208, 208);
 }
@@ -146,114 +167,66 @@
   background-repeat: no-repeat;
   height: 130px;
 }
-.dashboard{
-  /* background-image: url(../../../public/assets/images/dashboard.jpg); */
-}
 .black-dashboard{
-  /* background-image: url(../../../public/assets/images/black-dash-1.jpg); */
+  background-image: url(../../../public/assets/images/black-dash-1.jpg);
 }
 .bentfolio{
-  /* background-image: url(../../../public/assets/images/bentfolio.PNG); */
+  background-image: url(../../../public/assets/images/bentfolio.PNG);
 }
 .thrive-ai{
-  /* background-image: url(../../../public/assets/images/thrive-ai.jpg); */
+  background-image: url(../../../public/assets/images/thrive-ai.jpg);
 }
 .john-doe{
-  /* background-image: url(../../../public/assets/images/john.jpg); */
+  background-image: url(../../../public/assets/images/john.jpg);
 }
 .stimulus{
-  /* background-image: url(../../../public/assets/images/stimulus.jpg); */
-}
-.chain{
-  /* background-image: url(../../../public/assets/images/chain.jpg); */
+  background-image: url(../../../public/assets/images/stimulus.jpg);
 }
 .event{
-  /* background-image: url(../../../public/assets/images/event.jpg); */
-}
-.dream{
-  /* background-image: url(../../../public/assets/images/dream.jpg); */
-}
-.edu{
-  /* background-image: url(../../../public/assets/images/edu.jpg); */
+  background-image: url(../../../public/assets/images/event.jpg);
 }
 .template{
-  /* background-image: url(../../../public/assets/images/template.jpg); */
-}
-.bondi{
-  /* background-image: url(../../../public/assets/images/bondi.jpg); */
-}
-.vanilla{
-  /* background-image: url(../../../public/assets/images/vanilla.jpg); */
-}
-.grayscale{
-  /* background-image: url(../../../public/assets/images/grey.PNG); */
-}
-.design{
-  /* background-image: url(../../../public/assets/images/design.jpg); */
+  background-image: url(../../../public/assets/images/template.jpg);
 }
 .space{
-  /* background-image: url(../../../public/assets/images/space.jpg); */
+  background-image: url(../../../public/assets/images/space.jpg);
 }
-.bootstrap-dashboard{
-  /* background-image: url(../../../public/assets/images/bootstrap_dashboard.PNG); */
-}
-.credit-card{
-  /* background-image: url(../../../public/assets/images/card.jpg); */
-}
-.countdown{
-  /* background-image: url(../../../public/assets/images/countdown.jpg); */
-}
-.rps{
-  /* background-image: url(../../../public/assets/images/RPS.jpg); */
-}
-.draw-app{
-  /* background-image: url(../../../public/assets/images/draw.jpg); */
-}
-.weather-app{
-  /* background-image: url(../../../public/assets/images/weather.jpg); */
-}
-.to{
-  /* background-image: url(../../../public/assets/images/to-do-app.jpg); */
-}
+
 .ramadan-night{
-  /* background-image: url(../../../public/assets/images/ramadan-nights-bg.jpg); */
-}
-.digitf{
-  /* background-image: url(../../../public/assets/images/digitf.png); */
-}
-.mstskp{
-  /* background-image: url(../../../public/assets/images/MSTSKP.PNG); */
+  background-image: url(../../../public/assets/images/ramadan-nights-bg.jpg);
 }
 .vuertfolio{
-  /* background-image: url(../../../public/assets/images/vuertfolio.PNG); */
-}
-.open-app{
-  /* background-image: url(../../../public/assets/images/open-app.PNG); */
+  background-image: url(../../../public/assets/images/vuertfolio.PNG);
 }
 .mo3shop{
-  /* background-image: url(../../../public/assets/images/mo3shop.PNG); */
+  background-image: url(../../../public/assets/images/mo3shop.PNG);
 }
-.to{
-  /* background-image: url(../../../public/assets/images/to-do-app.jpg); */
+
+.credit-card{
+  background-image: url(../../../public/assets/images/card.jpg);
+}
+.countdown{
+  background-image: url(../../../public/assets/images/countdown.jpg);
+}
+.rps{
+  background-image: url(../../../public/assets/images/RPS.jpg);
 }
 .picasa{
-  /* background-image: url(../../../public/assets/images/picasa.PNG); */
+  background-image: url(../../../public/assets/images/picasa.PNG);
 }
 .url-shrtr{
-  /* background-image: url(../../../public/assets/images/url-shrtr.jpg); */
+  background-image: url(../../../public/assets/images/url-shrtr.jpg);
 }
 .weight{
-  /* background-image: url(../../../public/assets/images/weight_app.jpg); */
+  background-image: url(../../../public/assets/images/weight_app.jpg);
 }
 .color-palette{
-  /* background-image: url(../../../public/assets/images/color-palette.jpg); */
+  background-image: url(../../../public/assets/images/color-palette.jpg);
 }
 .typathon{
-  /* background-image: url(../../../public/assets/images/typathon.jpg); */
+  background-image: url(../../../public/assets/images/typathon.jpg);
 }
-.quiz-game{
-  /* background-image: url(../../../public/assets/images/game.jpg); */
-}
+  
 .skills .other-work .other-work-links div:hover a{
   cursor: pointer;
   opacity: 0;
@@ -303,12 +276,20 @@
   transition: all 0.5s 0s ease-in-out;
   overflow: hidden;
 }
+.skills .apps.shown{
+  height: calc(100vh - 40px);
+  padding: 40px;
+  border-top: 1px solid var(--sec-color);
+  border-bottom: 1px solid var(--sec-color);
+  box-shadow: 2px 2px 24px -2px var(--sec-color);
+}
 .skills .apps h1{
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
   font-family: "Dancing Script",sans-serif;
+  font-family: "Federo",sans-serif;
   font-size: 250px;
   width: 100%;
   text-align: center;
@@ -316,7 +297,7 @@
   opacity: 0.4;
   color: var(--sec-color);
 }
-.skills .apps > i{
+.skills .apps > svg{
   position: absolute;
   top: 20px;
   right: 20px;
@@ -332,6 +313,10 @@
   transform: translateY(50px);
   opacity: 0;
 }
+.skills .apps.shown .apps-links{
+  transform: translateY(0px);
+  opacity: 1;
+}
 .skills .apps .apps-links a{
   display: block;
   color: var(--sec-color);
@@ -346,6 +331,7 @@
   align-items: center;
   justify-content: center;
   font-family: "Dancing Script",sans-serif;
+  font-family: "Federo",sans-serif;
   font-size: 28px;
   color: white;
 }
@@ -452,7 +438,7 @@
       animation: bg-size-change 0.3s 1 0s normal forwards;
       box-shadow: 2px 2px 24px -2px var(--main-color)
   }
-  .skills .other-work > i{
+  .skills .other-work > svg{
         right: 10px;
         top: 10px;
   }
@@ -480,7 +466,7 @@
       padding-left: 20px !important;
       padding-right: 20px !important;
   }
-  .skills .apps > i{
+  .skills .apps > svg{
         right: 10px;
         top: 10px;
   }
