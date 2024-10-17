@@ -7,23 +7,38 @@
   height: auto;
 }
 .hero h1{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: var(--main-transition);
   color: var(--sec-color);
   text-align: center;
   margin-bottom: 20px;
   font-size: 40px;
   font-family: "Federo",sans-serif;
 }
+.hero.scrolled h1{
+  opacity: 1;
+  transform: translateY(0px);
+}
 .hero .container .hero-item{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: relative;
   flex-direction: column;
   margin-bottom: 40px;
   width: 100%;
   border-top: 1px solid var(--sec-color);
   padding-top: 20px;
   color: #fff;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: var(--main-transition);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
+}
+.hero .container .hero-item.scrolled{
+  opacity: 1;
+  transform: translateY(0px);
 }
 .hero .container .hero-item:first-child h2{
   color: #0077fe;

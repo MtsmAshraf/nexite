@@ -1,7 +1,7 @@
 import { faLink, faStar } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
-import React from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
 import image12 from "../../../public/assets/images/thrive-ai.jpg"
 import image13 from "../../../public/assets/images/logos/icons8-react-16.png"
@@ -18,11 +18,42 @@ import image23 from "../../../public/assets/images/logos/icons8-github.svg"
 
 import "./hero.css"
 const Hero = () => {
+    const [scrolled, setScrolled] = useState(false)
+    const [scrolledOne, setScrolledOne] = useState(false)
+    const [scrolledTwo, setScrolledTwo] = useState(false)
+    let heroSection: any = useRef()
+    let heroItemOne: any = useRef()
+    let heroItemTwo: any = useRef()
+    let scrollSection = useCallback(() => {
+        if(heroSection.current.offsetTop <= window.scrollY + 400){
+            setScrolled(true)
+        }else{
+            setScrolled(false)
+        }
+    },[scrolled])
+    let scrollHeroItemOne = useCallback(() => {
+        if(heroItemOne.current.offsetTop <= window.scrollY + 400){
+                setScrolledOne(true)
+            }else{
+                setScrolledOne(false)
+            }
+        },[scrolledOne])
+        let scrollHeroItemTwo = useCallback(() => {
+            if(heroItemTwo.current.offsetTop <= window.scrollY + 400){
+                setScrolledTwo(true)
+            }else{
+                setScrolledTwo(false)
+            }
+        },[scrolledTwo])
+        window.addEventListener("scroll", scrollSection)
+        window.addEventListener("scroll",scrollHeroItemOne)
+        window.addEventListener("scroll",scrollHeroItemTwo)
+    
   return (
-    <section className="hero" id="latest">
+    <section ref={heroSection} className={scrolled ? "hero" + " " + "scrolled" : "hero"} id="latest">
         <h1>My Latest Work</h1>
         <div className="container">
-            <div className="hero-item">
+            <div className={scrolledOne ? "hero-item" + " " + "scrolled" : "hero-item"} ref={heroItemOne}>
             <h2>Thrive AI</h2>
             <p>
                 An Omani AI company for AI solutions for the goverment and the
@@ -119,7 +150,7 @@ const Hero = () => {
                 </div>
             </div>
             </div>
-            <div className="hero-item">
+            <div className={scrolledTwo ? "hero-item" + " " + "scrolled" : "hero-item"} ref={heroItemTwo}>
             <h2>Triple Clean</h2>
             <p>A car cleaning service for Grand Hayah hotel in Saudi Arabia</p>
             <a

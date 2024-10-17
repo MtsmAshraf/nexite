@@ -23,6 +23,7 @@ height: 100%;
     transition: var(--main-transition);
     transition-timing-function: ease-in-out;
     transition-duration: 0.5s;
+    z-index: 2;
 /* margin-right: 200px; */
 }
 .landing.loaded .container .text{
@@ -137,17 +138,27 @@ gap: 10px;
     transform: translateY(0px);
 }
 .landing .container .text .skills-icons img{
-width: 50px;
-object-fit: contain;
+    width: 50px;
+    object-fit: contain;
 }
 .landing .container > .img{
-height: 450px;
-width: 450px;
-/* overflow: hidden; */
-border-radius: 4px;
-position: absolute;
-bottom: 0;
-right: 250px;
+    height: 450px;
+    width: 450px;
+    /* overflow: hidden; */
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+@media (min-width: 1300px) {
+    .landing .container > .img{
+    right: 250px;
+    }
+}
+@media (max-width: 1300px) {
+    .landing .container > .img{
+        right: 150px;
+    }
 }
 .landing .container > .img  img{
 transition: var(--main-transition);
