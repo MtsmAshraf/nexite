@@ -25,7 +25,7 @@ const Landing = () => {
     <section className={loaded ? "landing" + " " + "loaded": "landing"} id="home">
         <div className="container">
         <div className="text">
-            <h2 style={{ height: 200 }}>Moatasim Ashraf</h2>
+            <h2>Moatasim Ashraf</h2>
             <p>
             No Introductions, here is
             <a href="#skills"> my work</a>
