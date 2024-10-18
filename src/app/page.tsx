@@ -13,6 +13,7 @@ import Contact from "@/components/contact/contact";
 import Footer from "@/components/footer/footer";
 import HScrollbar from "@/components/hScrollbar/hScrollbar";
 import Loader from "@/components/loader/loader";
+// import SwiperC from "@/components/swiper/swiper";
 export default function Home() {
 
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <Landing />
         <Hero />
         <Skills />
+        {/* <SwiperC /> */}
         <Testimonials />
         <Contact />
         <Footer />
