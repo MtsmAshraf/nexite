@@ -1,14 +1,14 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import "./landing.css"
-import image2 from "../../../public/assets/images/logos/icons8-react-16.png"
-import image3 from "../../../public/assets/images/logos/html5-logo-31813.png"
-import image4 from "../../../public/assets/images/logos/icons8-css-logo-48.png"
-import image5 from "../../../public/assets/images/logos/icons8-javascript-48.png"
+import image2 from "../../../public/assets/images/logos/react-2.svg"
+import image3 from "../../../public/assets/images/logos/html-5-logo.svg"
+import image4 from "../../../public/assets/images/logos/css-3.svg"
+import image5 from "../../../public/assets/images/logos/logo-javascript.svg"
 import image6 from "../../../public/assets/images/logos/tailwind-css.svg"
-import image7 from "../../../public/assets/images/logos/icons8-bootstrap-logo-48.png"
-import image8 from "../../../public/assets/images/logos/icons8-sass-48.png"
-import image9 from "../../../public/assets/images/logos/icons8-github-50.png"
+import image7 from "../../../public/assets/images/logos/bootstrap-4.svg"
+import image8 from "../../../public/assets/images/logos/sass-1.svg"
+import image9 from "../../../public/assets/images/logos/icons8-github.svg"
 import image10 from "../../../public/assets/images/logos/nextjs.svg"
 import image11 from "../../../public/assets/images/profile-removebg-preview.png"
 import SocialUl from '../socialUl/socialUl'
