@@ -163,7 +163,7 @@ text-decoration: underline;
 .landing .container > .img  img{
 transition: var(--main-transition);
 object-fit: contain;
-transform: scale(1.5) translateY(30%);
+transform: scale(1.7) translateY(30%);
 transform-origin: 50% 100%;
 opacity: 0;
 transition: var(--main-transition);
@@ -173,7 +173,7 @@ transition-delay: 0.8s;
 }
 .landing.loaded .container > .img img{
     opacity: 1;
-    transform: scale(1.5) translateY(0%);
+    transform: scale(1.7) translateY(0%);
 }
 .landing .container > .img::before{
     content: "";
