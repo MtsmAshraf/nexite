@@ -61,13 +61,17 @@ height: 100%;
     font-size: 18px;
     color: white;
     line-height: 1.4;
+    margin-bottom: 10px;
 }
 .landing .container .text p a{
     font-weight: bold;
     font-size: 20px;
+    margin-left: 2px;
+    color: var(--sec-color);
+    text-decoration: underline;
 }
 .landing .container .text  p a:hover{
-text-decoration: underline;
+    text-decoration: underline;
 }
 .landing .container .text .skills-icons{
     margin-top: 20px;
@@ -139,6 +143,7 @@ text-decoration: underline;
 }
 .landing .container .text .skills-icons img{
     width: 50px;
+    height: 50px;
     object-fit: contain;
 }
 .landing .container > .img{
@@ -200,19 +205,6 @@ transition-delay: 0.8s;
     transform: rotateZ(360deg);
 }
 }
-.landing .container > .img .dots-img:not(:last-child){
-    position: absolute;
-    top:-50px;
-    left:-50px;
-}
-.landing .container > .img .dots-img:last-child{
-    position: absolute;
-    bottom: -150px;
-    right:-150px;
-}
-.landing .container > .img .dots-img:last-child div{
-    background-color: var(--main-color);
-}
 .landing .container > .img img{
     position: relative;
     height: 100%;
@@ -258,9 +250,6 @@ transition-delay: 0.8s;
     header .container i{
         color: var(--sec-color);
     }
-/* .landing .dots-img{
-    display: none;
-} */
 }
 @media (max-width:992px){
     .landing .text{

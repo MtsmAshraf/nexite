@@ -2,9 +2,9 @@ import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import React from 'react'
-import image24 from "../../../public/assets/images/profileIcon.png"
-import image25 from "../../../public/assets/images/profileIcon.png"
-import image26 from "../../../public/assets/images/profileIcon.png"
+import image24 from "../../../public/assets/images/profileIcon.webp"
+import image25 from "../../../public/assets/images/profileIcon.webp"
+import image26 from "../../../public/assets/images/profileIcon.webp"
 
 import "./testimonials.css"
 const Testimonials = () => {

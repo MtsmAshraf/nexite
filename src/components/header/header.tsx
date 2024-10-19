@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import image1 from "../../../public/assets/images/Logo-noBg.png"
+import image1 from "../../../public/assets/images/Logo-noBg.webp"
 import "./header.css"
 import Link from 'next/link'
 const Header = () => {

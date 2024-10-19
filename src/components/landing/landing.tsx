@@ -10,11 +10,13 @@ import image7 from "../../../public/assets/images/logos/bootstrap-4.svg"
 import image8 from "../../../public/assets/images/logos/sass-1.svg"
 import image9 from "../../../public/assets/images/logos/icons8-github.svg"
 import image10 from "../../../public/assets/images/logos/nextjs.svg"
-import image11 from "../../../public/assets/images/profile-removebg-preview.png"
+import image11 from "../../../public/assets/images/profile-removebg-preview.webp"
+// import myCv from "../../../public/assets/documents/Moatasim-Ashraf.pdf"
+
 import SocialUl from '../socialUl/socialUl'
+import Link from 'next/link'
 
 const Landing = () => {
-    
     const [loaded, setLoaded] = useState(false)
     useEffect(() => {
             setTimeout(() => {
@@ -34,12 +36,24 @@ const Landing = () => {
             And here is
             <a
                 className="resume-link"
-                href="./documents/Moatasim-Ashraf.pdf"
+                href={"../../../public/assets/documents/Moatasim-Ashraf.pdf"}
                 target="_blank"
             >
                 {" "}
                 my Resume
             </a>
+            <Link 
+                href={'documents/Moatasim-Ashraf.pdf'}  
+                target="_blank"  
+                rel="noopener noreferrer" 
+                locale={false} download={"../../../public/assets/documents/Moatasim-Ashraf.pdf"}
+            >
+                Download Here
+            </Link>
+            {/* <button style={{ fontSize: "25px" }}
+                onClick={downloadFavicon}>
+                Download gfgNextJS
+            </button> */}
             </p>
             <div className="skills-icons">
             <span>

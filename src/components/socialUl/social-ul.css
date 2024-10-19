@@ -19,6 +19,7 @@ ul.main-social-links a{
     transition: var(--main-transition);
     font-size: 24px;
     width: 50px;
+    color: var(--sec-color);
 }
 ul.main-social-links a:hover{
     background-color: var(--sec-color);

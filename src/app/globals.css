@@ -74,7 +74,7 @@ ul{
 }
 a{
   text-decoration: none;
-  color: var(--sec-color);
+  /* color: var(--sec-color); */
   position: relative;
 }
 a::before{

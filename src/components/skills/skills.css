@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-image: url(../../../public/assets/images/skills.jpg); */
+  /* background-image: url(../../../public/assets/images/skills.webp); */
 
   background-size: cover;
   background-attachment: fixed;
@@ -168,66 +168,66 @@
   height: 130px;
 }
 .black-dashboard{
-  background-image: url(../../../public/assets/images/black-dash-1.jpg);
+  background-image: url(../../../public/assets/images/black-dash-1.webp);
 }
 .bentfolio{
-  background-image: url(../../../public/assets/images/bentfolio.PNG);
+  background-image: url(../../../public/assets/images/bentfolio.webp);
 }
 .thrive-ai{
-  background-image: url(../../../public/assets/images/thrive-ai.jpg);
+  background-image: url(../../../public/assets/images/thrive-ai.webp);
 }
 .triple-clean{
-  background-image: url(../../../public/assets/images/triple-clean.jpg);
+  background-image: url(../../../public/assets/images/triple-clean.webp);
 }
 .john-doe{
-  background-image: url(../../../public/assets/images/john.jpg);
+  background-image: url(../../../public/assets/images/john.webp);
 }
 .stimulus{
-  background-image: url(../../../public/assets/images/stimulus.jpg);
+  background-image: url(../../../public/assets/images/stimulus.webp);
 }
 .event{
-  background-image: url(../../../public/assets/images/event.jpg);
+  background-image: url(../../../public/assets/images/event.webp);
 }
 .template{
-  background-image: url(../../../public/assets/images/template.jpg);
+  background-image: url(../../../public/assets/images/template.webp);
 }
 .space{
-  background-image: url(../../../public/assets/images/space.jpg);
+  background-image: url(../../../public/assets/images/space.webp);
 }
 
 .ramadan-night{
-  background-image: url(../../../public/assets/images/ramadan-nights-bg.jpg);
+  background-image: url(../../../public/assets/images/ramadan-nights-bg.webp);
 }
 .vuertfolio{
-  background-image: url(../../../public/assets/images/vuertfolio.PNG);
+  background-image: url(../../../public/assets/images/vuertfolio.webp);
 }
 .mo3shop{
-  background-image: url(../../../public/assets/images/mo3shop.PNG);
+  background-image: url(../../../public/assets/images/mo3shop.webp);
 }
 
 .credit-card{
-  background-image: url(../../../public/assets/images/card.jpg);
+  background-image: url(../../../public/assets/images/card.webp);
 }
 .countdown{
-  background-image: url(../../../public/assets/images/countdown.jpg);
+  background-image: url(../../../public/assets/images/countdown.webp);
 }
 .rps{
-  background-image: url(../../../public/assets/images/RPS.jpg);
+  background-image: url(../../../public/assets/images/RPS.webp);
 }
 .picasa{
-  background-image: url(../../../public/assets/images/picasa.PNG);
+  background-image: url(../../../public/assets/images/picasa.webp);
 }
 .url-shrtr{
-  background-image: url(../../../public/assets/images/url-shrtr.jpg);
+  background-image: url(../../../public/assets/images/url-shrtr.webp);
 }
 .weight{
-  background-image: url(../../../public/assets/images/weight_app.jpg);
+  background-image: url(../../../public/assets/images/weight_app.webp);
 }
 .color-palette{
-  background-image: url(../../../public/assets/images/color-palette.jpg);
+  background-image: url(../../../public/assets/images/color-palette.webp);
 }
 .typathon{
-  background-image: url(../../../public/assets/images/typathon.jpg);
+  background-image: url(../../../public/assets/images/typathon.webp);
 }
   
 .skills .other-work .other-work-links div:hover a{
