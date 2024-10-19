@@ -5,19 +5,23 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
     min-height: 100vh;
   }
+.testimonials h2{
+  color: var(--sec-color);
+  font-family: "Federo",sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
   .testimonials .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    /* height: 100%; */
     overflow: hidden;
-    padding-top: 60px;
+    /* padding-top: 60px; */
     padding-bottom: 60px;
   }
   .testimonials .container .content{
@@ -27,7 +31,7 @@
     grid-template-columns: repeat(3,minmax(80%,1fr));
     justify-content: center;
     align-items: center;
-    height: 100%;
+    /* height: 100%; */
     position: relative;
   }
   .testimonials .container .content ul{

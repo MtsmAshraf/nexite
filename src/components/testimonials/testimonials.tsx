@@ -11,6 +11,7 @@ const Testimonials = () => {
   return (
     <section className="testimonials" id="testimonials">
         <div className="overlay" />
+        <h2>Testimonials</h2>
         <div className="container">
         <div className="content">
             <ul className="testi-shuffle">

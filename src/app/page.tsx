@@ -11,7 +11,7 @@ import Header from "@/components/header/header";
 import Nav from "@/components/nav/nav";
 import Contact from "@/components/contact/contact";
 import Footer from "@/components/footer/footer";
-import HScrollbar from "@/components/hScrollbar/hScrollbar";
+// import HScrollbar from "@/components/hScrollbar/hScrollbar";
 import Loader from "@/components/loader/loader";
 // import SwiperC from "@/components/swiper/swiper";
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
         {/*  */}
         
         <Loader />
-        <HScrollbar />
+        {/* <HScrollbar /> */}
         <Header />
         <Nav />
         <Landing />
