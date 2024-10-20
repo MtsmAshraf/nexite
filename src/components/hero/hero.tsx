@@ -14,7 +14,6 @@ import image19 from "../../../public/assets/images/logos/react-2.svg"
 import image20 from "../../../public/assets/images/logos/html-5-logo.svg"
 import image21 from "../../../public/assets/images/logos/css-3.svg"
 import image22 from "../../../public/assets/images/logos/logo-javascript.svg"
-import image23 from "../../../public/assets/images/logos/icons8-github.svg"
 
 import "./hero.css"
 const Hero = () => {
