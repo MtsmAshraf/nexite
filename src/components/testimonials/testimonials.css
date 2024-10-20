@@ -33,6 +33,7 @@
     align-items: center;
     /* height: 100%; */
     position: relative;
+    height: 500px;
   }
   .testimonials .container .content ul{
     position: absolute;
