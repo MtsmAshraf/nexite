@@ -37,7 +37,8 @@ const Landing = () => {
             And here is
             <a
                 className="resume-link"
-                href={"../../../public/Moatasim-Ashraf.pdf"}
+                // href={"../../../public/Moatasim-Ashraf.pdf"}
+                href={"https://drive.google.com/file/d/1OOvgDG81ZoGjyR5AsUEG-IuxIjZ1jQ9E/view?usp=sharing"}
                 target="_blank"
             >
                 {" "}

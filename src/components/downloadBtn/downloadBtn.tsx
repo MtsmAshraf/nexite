@@ -16,6 +16,7 @@ const DownloadButton = () => {
     <button 
         onClick={handleDownload} 
         className="download-btn"
+        title='Download Resume'
     >
         <FontAwesomeIcon icon={faDownload} />
     </button>

@@ -132,6 +132,12 @@
   width: 40px;
   height: 40px;
   object-fit: contain;
+  border-radius: 50%;
+  background-color: var(--main-color-semi);
+  padding: 5px;
+}
+.hero .container .details ul span{
+  font-size: 12px;
 }
 .hero .container .details a{
   display: flex;
@@ -175,7 +181,6 @@
     /* width: 30px; */
   }
   .hero .container .details ul img{
-    border-radius: 50%;
     background-color: var(--sec-color-trans);
   }
 }

@@ -4,11 +4,11 @@ import Image from 'next/image'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 
 import image12 from "../../../public/assets/images/thrive-ai.webp"
-import image13 from "../../../public/assets/images/logos/react-2.svg"
+// import image13 from "../../../public/assets/images/logos/reactJs-dark.svg"
 import image14 from "../../../public/assets/images/logos/html-5-logo.svg"
 import image15 from "../../../public/assets/images/logos/css-3.svg"
 import image16 from "../../../public/assets/images/logos/logo-javascript.svg"
-import image17 from "../../../public/assets/images/logos/icons8-github.svg"
+import image17 from "../../../public/assets/images/logos/icons8-github-light.svg"
 import image18 from "../../../public/assets/images/triple-clean.webp"
 import image19 from "../../../public/assets/images/logos/react-2.svg"
 import image20 from "../../../public/assets/images/logos/html-5-logo.svg"
@@ -86,7 +86,7 @@ const Hero = () => {
                     <ul>
                     <li>
                         <div className="img">
-                        <Image src={image13} alt="Image" loading={"lazy"}></Image>
+                        <Image src={image19} alt="Image" loading={"lazy"}></Image>
                         
                         </div>
                         <span>React.js</span>
@@ -204,7 +204,7 @@ const Hero = () => {
                     </li>
                     <li>
                         <div className="img">
-                        <Image src={image23} alt="Image" loading={"lazy"}></Image>
+                        <Image src={image17} alt="Image" loading={"lazy"}></Image>
                         
                         </div>
                         <span>Github</span>
