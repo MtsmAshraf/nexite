@@ -198,7 +198,7 @@ const Skills = () => {
             Check them out!
             </p>
             <button className='main-button' onClick={() => {openWork()}}>
-                <span>SEE MY WORK </span>
+                <span>SEE MY WORK</span>
                 <FontAwesomeIcon icon={faArrowRight} />
             </button>
         </div>

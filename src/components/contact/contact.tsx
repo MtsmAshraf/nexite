@@ -1,5 +1,7 @@
 import React from 'react'
 import "./contact.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 const Contact = () => {
   return (
     <section className="contact parallax" id="contact">
@@ -23,9 +25,9 @@ const Contact = () => {
                 defaultValue={""}
             />
             </div>
-            <button>
-            <span>Shoot </span>
-            <i className="fa-solid fa-arrow-right" />
+            <button className='main-button'>
+              <span>Send</span>
+              <FontAwesomeIcon icon={faArrowRight}/>
             </button>
         </form>
         </div>
