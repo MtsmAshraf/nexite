@@ -14,7 +14,7 @@ import image11 from "../../../public/assets/images/profile-removebg-preview.webp
 // import myCv from "../../../public/assets/documents/Moatasim-Ashraf.pdf"
 
 import SocialUl from '../socialUl/socialUl'
-import Link from 'next/link'
+// import Link from 'next/link'
 
 const Landing = () => {
     const [loaded, setLoaded] = useState(false)
@@ -42,14 +42,14 @@ const Landing = () => {
                 {" "}
                 my Resume
             </a>
-            <Link 
+            {/* <Link 
                 href={'documents/Moatasim-Ashraf.pdf'}  
                 target="_blank"  
                 rel="noopener noreferrer" 
                 locale={false} download={"../../../public/assets/documents/Moatasim-Ashraf.pdf"}
             >
                 Download Here
-            </Link>
+            </Link> */}
             {/* <button style={{ fontSize: "25px" }}
                 onClick={downloadFavicon}>
                 Download gfgNextJS
