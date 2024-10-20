@@ -17,7 +17,7 @@ ul.main-social-links a{
     justify-content: center;
     padding: 10px;
     transition: var(--main-transition);
-    font-size: 24px;
+    font-size: 24px; 
     width: 50px;
     color: var(--sec-color);
 }
