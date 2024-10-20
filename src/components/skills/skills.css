@@ -185,6 +185,9 @@
 .stimulus{
   background-image: url(../../../public/assets/images/stimulus.webp);
 }
+.dashboard{
+  background-image: url(../../../public/assets/images/dashboard.webp);
+}
 .event{
   background-image: url(../../../public/assets/images/event.webp);
 }

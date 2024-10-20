@@ -92,11 +92,11 @@ const Skills = () => {
             {/* <div class="open-app">
                 <a href="https://open-app-seven.vercel.app/" target="_blank">open-app</a>
             </div> */}
-            {/* <div class="dashboard"> 
-                <a href="7 Templare seven/jTemp7.html" target="_blank">Dashboard</a>
-            </div> */}
+            <div className="dashboard"> 
+                <a href="https://dashboard-sepia-six.vercel.app/" target="_blank">Dashboard</a>
+            </div>
             <div className="stimulus">
-            <a href="4 template four/jTemp4.html" target="_blank">
+            <a href="https://stimulus-rho.vercel.app/" target="_blank">
                 Stimulus
             </a>
             </div>
@@ -135,7 +135,7 @@ const Skills = () => {
                 <a href="Bootstrap template 3/index.html" target="_blank">Design</a>
             </div> */}
             <div className="space">
-            <a href="4 four/index.html" target="_blank">
+            <a href="https://space-tourism-vert-two.vercel.app/" target="_blank">
                 Space Tourism
             </a>
             </div>

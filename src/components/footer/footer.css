@@ -3,11 +3,17 @@
 footer ul.main-social-links{
     margin-right: auto;
     margin-left: auto;
-  }
-  footer ul.main-social-links a{
-  }
-  footer ul a:hover{
-    background-color: var(--sec-color);
-    color: var(--main-color);
-  }
+}
+footer ul a:hover{
+  background-color: var(--sec-color);
+  color: var(--main-color);
+}
+footer .logo{
+  width: 140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .logo img{
+  object-fit: contain;
+}
   /* end footer */

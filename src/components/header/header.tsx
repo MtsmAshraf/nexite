@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header className={loaded ? "header" + " " + "loaded": "header"}>
         <Link href="/">
-        <Image src={image1} alt="Image" loading={"lazy"}></Image>
+          <Image src={image1} alt="Image" loading={"lazy"}></Image>
         </Link>
     </header>
   )
