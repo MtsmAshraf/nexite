@@ -197,7 +197,7 @@ const Skills = () => {
             ideas and catergories. <br />
             Check them out!
             </p>
-            <button onClick={() => {openWork()}}>
+            <button className='main-button' onClick={() => {openWork()}}>
                 <span>SEE MY WORK </span>
                 <FontAwesomeIcon icon={faArrowRight} />
             </button>
@@ -210,7 +210,7 @@ const Skills = () => {
             question-diverse. <br />
             Check them out
             </p>
-            <button onClick={() => {openApps()}} className="game">
+            <button className='main-button' onClick={() => {openApps()}} className="game">
                 <span>SHOW APPS</span>
                 <FontAwesomeIcon icon={faArrowRight} />
             </button>

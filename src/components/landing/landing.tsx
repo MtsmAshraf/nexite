@@ -14,6 +14,7 @@ import image11 from "../../../public/assets/images/profile-removebg-preview.webp
 // import myCv from "../../../public/assets/documents/Moatasim-Ashraf.pdf"
 
 import SocialUl from '../socialUl/socialUl'
+import DownloadButton from '../downloadBtn/downloadBtn'
 // import Link from 'next/link'
 
 const Landing = () => {
@@ -36,24 +37,13 @@ const Landing = () => {
             And here is
             <a
                 className="resume-link"
-                href={"../../../public/assets/documents/Moatasim-Ashraf.pdf"}
+                href={"../../../public/Moatasim-Ashraf.pdf"}
                 target="_blank"
             >
                 {" "}
                 my Resume
             </a>
-            {/* <Link 
-                href={'documents/Moatasim-Ashraf.pdf'}  
-                target="_blank"  
-                rel="noopener noreferrer" 
-                locale={false} download={"../../../public/assets/documents/Moatasim-Ashraf.pdf"}
-            >
-                Download Here
-            </Link> */}
-            {/* <button style={{ fontSize: "25px" }}
-                onClick={downloadFavicon}>
-                Download gfgNextJS
-            </button> */}
+            <DownloadButton></DownloadButton>
             </p>
             <div className="skills-icons">
             <span>

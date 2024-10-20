@@ -93,7 +93,7 @@ a:hover:before{
   /* opacity: 0.3; */
   /* right: -10px; */
 }
-button{
+.main-button{
   box-shadow: 2px 2px 24px -2px var(--sec-color);
   background-color: rgba(73, 21, 21, 0.2);
   border-radius: 8px;
@@ -109,7 +109,7 @@ button{
   cursor: pointer;
   overflow: hidden;
 }
-button::before{
+.main-button::before{
   content: "";
   position: absolute;
   background-color: var(--sec-color);
@@ -119,17 +119,17 @@ button::before{
   left:0;
   transition: all 0.2s 0s linear;
 }
-button svg{
+.main-button svg{
   margin-left: 10px;
   position: relative;
 }
-button span{
+.main-button span{
   position: relative;
 }
-button:hover:before{
+.main-button:hover:before{
   width: 100%;
 }
-button:hover{
+.main-button:hover{
   color: var(--main-color);
 }
 /* end global rules */

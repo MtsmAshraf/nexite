@@ -97,6 +97,7 @@ height: 100%;
     transition: var(--main-transition);
     transition-timing-function: ease-in-out;
     transition-duration: 0.5s;
+    overflow: hidden;
 }
 .landing.loaded .container .text .skills-icons span{
     opacity: 1;
