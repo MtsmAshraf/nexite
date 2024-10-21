@@ -42,6 +42,7 @@ body{
 }
 html{
   scroll-behavior: smooth;
+  scroll-padding: 70px;
 }
 ::placeholder{
   color: #888;
@@ -53,6 +54,9 @@ html{
 img{
   max-width: 100%;
   /* object-fit: contain; */
+}
+textarea{
+  resize: none;
 }
 section{
   height: 100vh;
