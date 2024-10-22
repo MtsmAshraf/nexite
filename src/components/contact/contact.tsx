@@ -6,9 +6,9 @@ const Contact = () => {
   const onsubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const body = new FormData(e.target as HTMLFormElement)
-    fetch("/api/sent/", {
+    fetch("/api/sent", {
       method: "POST",
-      body,
+      body, 
     })
   }
   return (
