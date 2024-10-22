@@ -19,6 +19,7 @@ const SocialUl = () => {
         <li>
             <a
                 href="https://wa.me/201024994652"
+                // href="https://wa.me/201014589984"
                 className="whatsapp"
                 target="_blank"
                 title="Whassapp"

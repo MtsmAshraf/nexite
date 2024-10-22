@@ -128,13 +128,27 @@
   align-items: center;
   gap: 10px;
 }
-.hero .container .details ul img{
+.hero .container .details ul li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.hero .container .details ul .img{
   width: 40px;
   height: 40px;
-  object-fit: contain;
   border-radius: 50%;
   background-color: var(--main-color-semi);
   padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero .container .details ul img{
+  object-fit: contain;
+  /* width: 40px; */
+  /* height: 40px; */
 }
 .hero .container .details ul span{
   font-size: 12px;
@@ -180,8 +194,8 @@
   .hero .container .details .project-info > :nth-child(1) img{
     /* width: 30px; */
   }
-  .hero .container .details ul img{
-    background-color: var(--sec-color-trans);
+  .hero .container .details ul .img{
+    background-color: transparent;
   }
 }
 @media (max-width: 767px) {

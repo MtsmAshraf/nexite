@@ -5,6 +5,8 @@ export async function POST(request: NextRequest){
         const formData = await request.formData();
         const brevo = require('@getbrevo/brevo');
         const username = formData.getAll("username");
+        const email = formData.getAll("email");
+        const msg = formData.getAll("msg");
         const apiInstance = new brevo.TransactionalEmailsApi();
 
         const apiKey = apiInstance.authentications['apiKey'];
@@ -12,7 +14,23 @@ export async function POST(request: NextRequest){
         const sendSmtpEmail = new brevo.SendSmtpEmail();
 
         sendSmtpEmail.subject = "Message from website";
-        sendSmtpEmail.htmlContent = `<html><body><h1>${username}</h1></body></html>`;
+        sendSmtpEmail.htmlContent =
+            `
+            <html>
+                <body>
+                    <h4>
+                        From: ${username}
+                    </h4>
+                    <h4>
+                        Email: ${email}
+                    </h4>
+                    <hr />
+                    <p>
+                        ${msg}
+                    </p>
+                </body>
+            </html>
+        `;
         sendSmtpEmail.sender = { "name": "User", "email": "mo32000a@gmail.com" };
         sendSmtpEmail.to = [
             { "email": "mo32000a@gmail.com", "name": "Moatasim" }

@@ -69,7 +69,9 @@ const Contact = () => {
         <div className="overlay" />
         <div className="container">
           <h2>Send me a message!</h2>
-          <p>Got a question or proposal, or just want to say hello? Go ahead.</p>
+          <p>
+            And I will email you back as soon as possible!
+          </p>
           <form onSubmit={onsubmit}>
               <div className="in">
                 <label htmlFor="">Your Name</label>
@@ -77,11 +79,11 @@ const Contact = () => {
               </div>
               <div className="in">
                 <label htmlFor="">Your Email</label>
-                <input ref={email} required type="email" id="mail" placeholder="Enter Your Email" />
+                <input ref={email} required type="email" name='email' id="mail" placeholder="Enter Your Email" />
               </div>
               <div className='text-area'>
                 <label htmlFor="">Your Message</label>
-                <textarea ref={msg}
+                <textarea ref={msg} name='msg'
                     placeholder="Hi, I think we need to design system for our products at Company X, How soon can you hop on to discuss this?"
                     defaultValue={""}
                 />
