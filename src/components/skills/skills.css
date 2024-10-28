@@ -47,7 +47,7 @@
 }
 .skills .container .box p{
   font-size: 24px;
-  color: white;
+  color: var(--text-color);
   margin-top: 40px;
   margin-bottom: 40px;
   line-height: 1.4;
@@ -133,7 +133,7 @@
 }
 
 .skills .other-work .other-work-links::-webkit-scrollbar-thumb{
-  background-color: #fff;
+  background-color: var(--text-color);
   border-radius: 10px;
 }
 .skills .other-work .other-work-links a{
@@ -339,7 +339,7 @@
   font-family: "Dancing Script",sans-serif;
   font-family: "Federo",sans-serif;
   font-size: 28px;
-  color: white;
+  color: var(--text-color);
 }
 .skills .apps .apps-links div{
   text-align: center;

@@ -3,26 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 
-import image12 from "../../../public/assets/images/thrive-ai.webp"
-// import image13 from "../../../public/assets/images/logos/reactJs-dark.svg"
-import image14 from "../../../public/assets/images/logos/html-5-logo.svg"
-import image15 from "../../../public/assets/images/logos/css-3.svg"
-import image16 from "../../../public/assets/images/logos/logo-javascript.svg"
-import image17 from "../../../public/assets/images/logos/icons8-github-light.svg"
-import image18 from "../../../public/assets/images/triple-clean.webp"
-import image19 from "../../../public/assets/images/logos/react-2.svg"
-import image20 from "../../../public/assets/images/logos/html-5-logo.svg"
-import image21 from "../../../public/assets/images/logos/css-3.svg"
-import image22 from "../../../public/assets/images/logos/logo-javascript.svg"
+
+import heroItems from "./heroItems"
 
 import "./hero.css"
+import HeroItem from './heroItem/heroItem'
 const Hero = () => {
     const [scrolled, setScrolled] = useState(false)
-    const [scrolledOne, setScrolledOne] = useState(false)
-    const [scrolledTwo, setScrolledTwo] = useState(false)
     const heroSection: any = useRef()
-    const heroItemOne: any = useRef()
-    const heroItemTwo: any = useRef()
     const scrollSection = useCallback(() => {
         if(heroSection.current){
             if(heroSection.current.offsetTop <= window.scrollY + 400){
@@ -32,217 +20,88 @@ const Hero = () => {
             }
         }
     },[])
-    const scrollHeroItemOne = useCallback(() => {
-        if(heroItemOne.current){
-            if(heroItemOne.current.offsetTop <= scrollY + 400){
-                setScrolledOne(true)
-            }else{
-                setScrolledOne(false)
-            }
-        }
-        },[])
-        const scrollHeroItemTwo = useCallback(() => {
-            if(heroItemTwo.current){
-                if(heroItemTwo.current.offsetTop <= scrollY + 400){
-                    setScrolledTwo(true)
-                }else{
-                    setScrolledTwo(false)
-                }
-            }
-        },[])
-        useEffect(() => {
-            window.addEventListener("scroll", scrollSection)
-            window.addEventListener("scroll",scrollHeroItemOne)
-            window.addEventListener("scroll",scrollHeroItemTwo)
-        })
+    
+    useEffect(() => {
+        window.addEventListener("scroll", scrollSection)
+    })
     
   return (
     <section ref={heroSection} className={scrolled ? "hero" + " " + "scrolled" : "hero"} id="latest">
         <h1>My Latest Work</h1>
         <div className="container">
-            <div className={scrolledOne ? "hero-item" + " " + "scrolled" : "hero-item"} ref={heroItemOne}>
-            <h2>Thrive AI</h2>
-            <p>
-                An Omani AI company for AI solutions for the goverment and the
-                medical organizations in Oman
-            </p>
-            <p>
-                [THE ORIGINAL CONTENT WAS REPLACED BY A DUMMY AS THE CLIENT
-                REQUESTED]
-            </p>
-            <a
-                href="https://thrive-ai-nine.vercel.app"
-                target="_blank"
-                className="project"
-            >
-                <Image src={image12} alt="Image" loading={"lazy"}></Image>
-                
-            </a>
-            <div className="details">
-                <div className="project-info">
-                <div>
-                    <h3>Technology used</h3>
-                    <ul>
-                    <li>
-                        <div className="img">
-                        <Image src={image19} alt="Image" loading={"lazy"}></Image>
-                        
-                        </div>
-                        <span>React.js</span>
-                    </li>
-                    <li>
-                        <div className="img">
-                        <Image src={image14} alt="Image" loading={"lazy"}></Image>
-                        
-                        </div>
-                        <span>HTML</span>
-                    </li>
-                    <li>
-                        <div className="img">
-                        <Image src={image15} alt="Image" loading={"lazy"}></Image>
-                        
-                        </div>
-                        <span>CSS</span>
-                    </li>
-                    <li>
-                        <div className="img">
-                        <Image src={image16} alt="Image" loading={"lazy"}></Image>
-                        
-                        </div>
-                        <span>JavaScript</span>
-                    </li>
-                    <li>
-                        <div className="img">
-                        <Image src={image17} alt="Image" loading={"lazy"}></Image>
-                        
-                        </div>
-                        <span>Github</span>
-                    </li>
-                    </ul>
-                    <a href="https://thrive-ai-nine.vercel.app" target="_blank">
-                    <p>Project Link</p>
-                    <span>
-                        <FontAwesomeIcon icon={faLink} />
-                    </span>
-                    </a>
-                </div>
-                <div className="client-rating">
-                    <h3>Client&apos;s Rating</h3>
-                    <ul>
-                    <li>
-                        <FontAwesomeIcon icon={faStar} />
-                    </li>
-                    <li>
-                        <FontAwesomeIcon icon={faStar} />
-                    </li>
-                    <li>
-                        <FontAwesomeIcon icon={faStar} />
-                    </li>
-                    <li>
-                        <FontAwesomeIcon icon={faStar} />
-                    </li>
-                    <li>
-                        <FontAwesomeIcon icon={faStar} />
-                    </li>
-                    </ul>
-                    <p className="arabic">
-                    محترف وسلس في التعامل. يتجاوب بشكل ممتاز مع التغييرات ويحول
-                    الأفكار إلى واقع. ممتاز جدا!
-                    </p>
-                    <p>
-                    Professional and smooth in dealing. Responds excellently to
-                    changes and turns ideas into reality. Very excellent!
-                    </p>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div className={scrolledTwo ? "hero-item" + " " + "scrolled" : "hero-item"} ref={heroItemTwo}>
-            <h2>Triple Clean</h2>
-            <p>A car cleaning service for Grand Hayah hotel in Saudi Arabia</p>
-            <a
-                href="https://triple-clean-2-7kyc.vercel.app/"
-                target="_blank"
-                className="project"
-            >
-                <Image src={image18} alt="Image" loading={"lazy"}></Image>
-                
-            </a>
-            <div className="details">
-                <div className="project-info">
-                <div>
-                    <h3>Technology used</h3>
-                    <ul>
-                    <li>
-                        <div className="img">
-                        <Image src={image19} alt="Image" loading={"lazy"}></Image>
-                        
-                        </div>
-                        <span>React.js</span>
-                    </li>
-                    <li>
-                        <div className="img">
-                        <Image src={image20} alt="Image" loading={"lazy"}></Image>
-                        
-                        </div>
-                        <span>HTML</span>
-                    </li>
-                    <li>
-                        <div className="img">
-                        <Image src={image21} alt="Image" loading={"lazy"}></Image>
-                        
-                        </div>
-                        <span>CSS</span>
-                    </li>
-                    <li>
-                        <div className="img">
-                        <Image src={image22} alt="Image" loading={"lazy"}></Image>
-                        
-                        </div>
-                        <span>JavaScript</span>
-                    </li>
-                    <li>
-                        <div className="img">
-                        <Image src={image17} alt="Image" loading={"lazy"}></Image>
-                        
-                        </div>
-                        <span>Github</span>
-                    </li>
-                    </ul>
-                    <a href="https://triple-clean-2-7kyc.vercel.app/" target="_blank">
-                    <p>Project Link</p>
-                    <span>
-                        <FontAwesomeIcon icon={faLink} />
-                    </span>
-                    </a>
-                </div>
-                <div className="client-rating">
-                    <h3>Client&apos;s Rating</h3>
-                    <ul>
-                    <li>
-                        <FontAwesomeIcon icon={faStar} />
-                    </li>
-                    <li>
-                        <FontAwesomeIcon icon={faStar} />
-                    </li>
-                    <li>
-                        <FontAwesomeIcon icon={faStar} />
-                    </li>
-                    <li>
-                        <FontAwesomeIcon icon={faStar} />
-                    </li>
-                    <li>
-                        <FontAwesomeIcon icon={faStar} />
-                    </li>
-                    </ul>
-                    <p className="arabic">فنان ما شاء الله</p>
-                    <p>An artist, Mashallah.</p>
-                </div>
-                </div>
-            </div>
-            </div>
+            {
+                heroItems.map((item) => {
+                    return(
+                        <HeroItem key={item.id}>
+                            <h2 style={{color: item.itemColor}}>{item.title}</h2>
+                            <p>
+                                {item.description}
+                            </p>
+                            {item.note &&  
+                                <p>
+                                    {item.note}
+                                </p>
+                            }
+                            <a
+                                href={item.href}
+                                target="_blank"
+                                className="project"
+                            >
+                                <Image src={item.src} alt={item.alt} loading={"lazy"}></Image>
+                            </a>
+                            <div className="details">
+                                <div className="project-info">
+                                <div>
+                                    <h3>Technology used</h3>
+                                    <ul>
+                                        {
+                                            item.techUsed.map((tech) => {
+                                                return(
+                                                    <li key={tech.id}>
+                                                        <div className="img">
+                                                            <Image src={tech.imgSrc} alt={`${tech.name} image`} loading={"lazy"}></Image>
+                                                        </div>
+                                                        <span>{tech.name}</span>
+                                                    </li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                    <a href={item.href} target="_blank">
+                                    <p>Project Link</p>
+                                    <span>
+                                        <FontAwesomeIcon icon={faLink} />
+                                    </span>
+                                    </a>
+                                </div>
+                                <div className="client-rating">
+                                    <h3>Client&apos;s Rating</h3>
+                                    <ul>
+                                        {
+                                            item.clientStars.map((star) => {
+                                                return(
+                                                    <li key={star}>
+                                                        <FontAwesomeIcon icon={faStar} />
+                                                    </li>
+                                                )
+                                            })
+                                        }
+                                    </ul>
+                                    <p className="arabic">
+                                        {item.clientRatingAr}
+                                    </p>
+                                    <p>
+                                        {item.clientRatingEn}
+                                    </p>
+                                </div>
+                                </div>
+                            </div>
+                        </HeroItem>
+                    )
+                })
+            }
         </div>
-        </section>
+    </section>
   )
 }
 

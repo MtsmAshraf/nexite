@@ -59,7 +59,7 @@ height: 100%;
 }
 .landing .container .text > p{
     font-size: 18px;
-    color: white;
+    color: var(--text-color);
     line-height: 1.4;
     margin-bottom: 10px;
 }
@@ -188,7 +188,7 @@ transition-delay: 0.8s;
     height: 100%;
     top: -60px;
     left: 0px;
-    border: 1px solid white;
+    border: 1px solid var(--text-color);
     z-index: 2;
     border-radius: 10px;
     animation: frame-rotate 30s linear 0s infinite;
@@ -225,7 +225,7 @@ transition-delay: 0.8s;
         gap: 60px;
     }
     .landing .container > .img{
-        position: relative;
+        /* position: relative; */
         right: unset !important;
         margin-right: auto;
         margin-left: auto;

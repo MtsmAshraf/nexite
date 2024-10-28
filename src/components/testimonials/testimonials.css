@@ -50,7 +50,7 @@
     border-radius: 50%;
     width: 12px;
     height: 12px;
-    background-color: white;
+    background-color: var(--text-color);
     cursor: pointer;
     transition: all 0.3s 0s linear;
   }
@@ -114,7 +114,7 @@
     margin: 10px auto ;
     font-size: 20px;
     line-height: 1.6;
-    color: white;
+    color: var(--text-color);
     border-bottom: 2px solid var(--sec-color);
     padding-bottom: 0px;
     font-weight: bold;
@@ -136,7 +136,7 @@
   }
   .testimonials .container .person .person-info{
     padding: 20px;
-    color: white;
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     justify-content: center;

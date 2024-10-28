@@ -2,7 +2,7 @@
     border: 1px solid var(--sec-color);
     background-color: var(--main-color-semi);
     margin-left: 3px;
-    color: #fff;
+    color: var(--text-color);
     width: 30px;
     height: 30px;
     border-radius: 50%;

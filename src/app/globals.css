@@ -3,14 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Federo&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 /* start vars */
 :root{
-  --main-color:#020206;
-  --sec-color:#f01010;
-  --sec-color-trans:rgb(240, 16, 16,0.5);
+  --main-color:#060202;
   --main-color-semi: #020206ae;
+  --sec-color:#f01010;
+  --sec-color-trans:#f0101080;
+  --label-color: #aaa;
+  --text-color: #fff;
   --google-color: #4285f4;
   --upwork-color: #14a800;
   --whatsapp-color: #128c7e;
-  --correct-color: rgb(5, 165, 5);
+  --correct-color: #05a505;
   --error-color: #f01010;
   --main-transition: all 0.2s 0s linear;
 }
@@ -37,6 +39,7 @@ body{
   width: 100vw;
   overflow-x: hidden;
   background-color: var(--main-color);
+  color: var(--text-color) !important;
 }
 .arabic{
   font-family: "EL Messiri", sans-serif;
@@ -47,7 +50,7 @@ html{
   scroll-padding: 70px;
 }
 ::placeholder{
-  color: #888;
+  color: var(--label-color);
 }
 ::selection{
   background-color: var(--sec-color);
