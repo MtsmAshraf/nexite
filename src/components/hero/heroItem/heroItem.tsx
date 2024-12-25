@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 
 const HeroItem = ({
-    children
+    children,
 }: {
     children: React.ReactNode,
 }) => {

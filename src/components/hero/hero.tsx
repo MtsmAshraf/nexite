@@ -46,12 +46,13 @@ const Hero = () => {
                                 href={item.href}
                                 target="_blank"
                                 className="project"
+                                style={{ borderColor: item.itemColor }}
                             >
                                 <Image src={item.src} alt={item.alt} loading={"lazy"}></Image>
                             </a>
-                            <div className="details">
+                            <div className="details" style={{ borderColor: item.itemColor }}>
                                 <div className="project-info">
-                                <div>
+                                <div style={{ borderColor: item.itemColor }}>
                                     <h3>Technology used</h3>
                                     <ul>
                                         {
@@ -67,11 +68,11 @@ const Hero = () => {
                                             })
                                         }
                                     </ul>
-                                    <a href={item.href} target="_blank">
-                                    <p>Project Link</p>
-                                    <span>
-                                        <FontAwesomeIcon icon={faLink} />
-                                    </span>
+                                    <a style={{ color: item.itemColor, borderBottom: `1px solid ${item.itemColor}`, boxShadow: `2px 2px 24px -2px ${item.itemColor}`}} href={item.href} target="_blank">
+                                        <p>Project Link</p>
+                                        <span>
+                                            <FontAwesomeIcon icon={faLink} />
+                                        </span>
                                     </a>
                                 </div>
                                 <div className="client-rating">

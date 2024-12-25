@@ -2,12 +2,14 @@ import { StaticImageData } from "next/image"
 
 import image1 from "../../../public/assets/images/thrive-ai.webp"
 import image2 from "../../../public/assets/images/triple-clean.webp"
+import image3 from "../../../public/assets/images/smart-generation.webp"
 import image14 from "../../../public/assets/images/logos/html-5-logo.svg"
-import image15 from "../../../public/assets/images/logos/css-3.svg"
+import image15 from "../../../public/assets/images/logos/Official_CSS_new_Logo.png"
 import image16 from "../../../public/assets/images/logos/logo-javascript.svg"
 import image17 from "../../../public/assets/images/logos/icons8-github-light.svg"
 import image19 from "../../../public/assets/images/logos/react-2.svg"
-
+import image20 from "../../../public/assets/images/logos/icons8-next.js-100.png"
+import image21 from "../../../public/assets/images/logos/logo-typescript.svg"
 
 type TechUsed = {
     id: string,
@@ -110,7 +112,51 @@ const heroItems : HeroItemT[] = [
         clientRatingAr: "فنان ما شاء الله",
         clientRatingEn: "An artist, Mashallah.",
         itemColor: "#405ca8"
-    },
+    },{
+        id: "3",
+        title: "Smart Generation",
+        description: "An introductory website for the Egyptian company Smart Generation, a leader in the fields of engineering, construction, engineering supplies, low-current systems, central cooling and air conditioning, plumbing works, and more.",
+        note: "",
+        href: "https://smart-generation-bay.vercel.app/",
+        src: image3,
+        alt: "Smart Generation project image",
+        techUsed: [
+            {
+                id: "1",
+                name: "Next.js",
+                imgSrc: image20
+            },
+            {
+                id: "2",
+                name: "React.js",
+                imgSrc: image19
+            },
+            {
+                id: "3",
+                name: "HTML",
+                imgSrc: image14
+            },
+            {
+                id: "4",
+                name: "CSS",
+                imgSrc: image15
+            },
+            {
+                id: "5",
+                name: "TypeScript",
+                imgSrc: image21
+            },
+            {
+                id: "6",
+                name: "Github",
+                imgSrc: image17
+            },
+        ],
+        clientStars: [1,2,3,4,5],
+        clientRatingAr: "فنان ما شاء الله",
+        clientRatingEn: "An artist, Mashallah.",
+        itemColor: "#e8af06"
+    }
 ]
 
 export default heroItems;

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import "./landing.css"
 import image2 from "../../../public/assets/images/logos/react-2.svg"
 import image3 from "../../../public/assets/images/logos/html-5-logo.svg"
-import image4 from "../../../public/assets/images/logos/css-3.svg"
+import image4 from "../../../public/assets/images/logos/Official_CSS_new_Logo.png"
 import image5 from "../../../public/assets/images/logos/logo-javascript.svg"
 import image6 from "../../../public/assets/images/logos/tailwind-css.svg"
 import image7 from "../../../public/assets/images/logos/bootstrap-4.svg"
