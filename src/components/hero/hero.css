@@ -43,6 +43,7 @@
 .hero .container .hero-item h2{
   font-size: 30px;
   margin-bottom: 10px;
+  text-align: center;
 }
 .hero .container .hero-item > p{
   line-height: 1.4;
