@@ -1,6 +1,6 @@
 import React from 'react'
 import { faFacebookF, faGithub, faLinkedinIn, faUpwork, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faCircleDot, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./social-ul.css"
 const SocialUl = () => {
@@ -40,6 +40,11 @@ const SocialUl = () => {
         <li>
             <a target="_blank" href="https://www.upwork.com/freelancers/~01c6a198d369e76392?mp_source=share" title='Upwork'>
             <FontAwesomeIcon icon={faUpwork} />
+            </a>
+        </li>
+        <li>
+            <a target="_blank" href="https://mostaql.com/u/Moatasim_Ashraf" title='Mostaql'>
+            <FontAwesomeIcon icon={faCircleDot} />
             </a>
         </li>
         <li>

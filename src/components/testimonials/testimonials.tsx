@@ -94,69 +94,69 @@ const Testimonials = () => {
                 animationIndex++
             }else if(animationIndex === 2){
                 activeThree()
-                animationIndex = 0
+                animationIndex = 0;
             }
-        }, 5000);
+        }, 6000);
     },[])
   return (
     <section ref={testimonials} className={testiScrolled ? "testimonials" + " " + "testiScrolled" : "testimonials"} id="testimonials">
         <div className="overlay" />
         <h2>Testimonials</h2>
         <div className="container">
-        <div className="content">
-            <ul className="testi-shuffle">
-                <li ref={liOne} />
-                <li ref={liTwo} className="active" />
-                <li ref={liThree} />
-            </ul>
-            <div className="person">
-                <span className="qoute-icon">
-                    <FontAwesomeIcon icon={faQuoteLeft} />
-                </span>
-                <div className="img">
-                    <Image src={image24} alt="Image" loading={"lazy"}></Image>
+            <div className="content">
+                <ul className="testi-shuffle">
+                    <li ref={liOne} />
+                    <li ref={liTwo} className="active" />
+                    <li ref={liThree} />
+                </ul>   
+                <div className="person">
+                    <span className="qoute-icon">
+                        <FontAwesomeIcon icon={faQuoteLeft} />
+                    </span>
+                    <div className="img">
+                        <Image src={image24} alt="Image" loading={"lazy"}></Image>
+                    </div>
+                    <p className="arabic">
+                        محترف وسلس في التعامل. يتجاوب بشكل ممتاز مع التغييرات ويحول الأفكار
+                        إلى واقع. ممتاز جدا!
+                    </p>
+                    <div className="person-info">
+                        <span className="person-name">Al Salt Al Bahri</span>
+                        <span className="person-title">Client (Thrive AI)</span>
+                    </div>
                 </div>
-                <p className="arabic">
-                    محترف وسلس في التعامل. يتجاوب بشكل ممتاز مع التغييرات ويحول الأفكار
-                    إلى واقع. ممتاز جدا!
-                </p>
-                <div className="person-info">
-                    <span className="person-name">Al Salt Al Bahri</span>
-                    <span className="person-title">Client (Thrive AI)</span>
+                <div className="person active">
+                    <span className="qoute-icon">
+                        <FontAwesomeIcon icon={faQuoteLeft} />
+                    </span>
+                    <div className="img">
+                        <Image src={image25} alt="Image" loading={"lazy"}></Image>
+                        
+                    </div>
+                    <p>
+                        Very competent and patient, did exactly what we needed, prompt and
+                        high quality work. Would be delighted to work together again.
+                    </p>
+                    <div className="person-info">
+                        <span className="person-name">Philip Allan</span>
+                        <span className="person-title">An Upwork client</span>
+                    </div>
+                </div>
+                <div className="person">
+                    <span className="qoute-icon">
+                        <FontAwesomeIcon icon={faQuoteLeft} />
+                    </span>
+                    <div className="img">
+                        <Image src={image26} alt="Image" loading={"lazy"}></Image>
+                        
+                    </div>
+                    <p className="arabic">فنان ما شاء الله</p>
+                    <div className="person-info">
+                        <span className="person-name arabic">عبد العزيز العنزي</span>
+                        <span className="person-title">Triple Clean</span>
+                    </div>
                 </div>
             </div>
-            <div className="person active">
-                <span className="qoute-icon">
-                    <FontAwesomeIcon icon={faQuoteLeft} />
-                </span>
-                <div className="img">
-                    <Image src={image25} alt="Image" loading={"lazy"}></Image>
-                    
-                </div>
-                <p>
-                    Very competent and patient, did exactly what we needed, prompt and
-                    high quality work. Would be delighted to work together again.
-                </p>
-                <div className="person-info">
-                    <span className="person-name">Philip Allan</span>
-                    <span className="person-title">An Upwork client</span>
-                </div>
-            </div>
-            <div className="person">
-                <span className="qoute-icon">
-                    <FontAwesomeIcon icon={faQuoteLeft} />
-                </span>
-                <div className="img">
-                    <Image src={image26} alt="Image" loading={"lazy"}></Image>
-                    
-                </div>
-                <p className="arabic">فنان ما شاء الله</p>
-                <div className="person-info">
-                    <span className="person-name arabic">عبد العزيز العنزي</span>
-                    <span className="person-title">Triple Clean</span>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
   )

@@ -154,7 +154,7 @@ const heroItems : HeroItemT[] = [
             },
         ],
         clientStars: [1,2,3,4,5],
-        clientRatingAr: "خمس نجوم في التعامل والجودة ووقت التنفيذ والاحترافية في التعامل",
+        clientRatingAr: "خمس نجوم في التعامل والجودة ووقت التنفيذ والاحترافية",
         clientRatingEn: "Five stars for communication, quality, delivery time, and professionalism",
         itemColor: "#14365c"
     },{
