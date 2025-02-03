@@ -1,19 +1,19 @@
-import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft, faChevronRight, faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
-import image24 from "../../../public/assets/images/profileIcon.webp"
-import image25 from "../../../public/assets/images/profileIcon.webp"
-import image26 from "../../../public/assets/images/profileIcon.webp"
-
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/bundle';
+import 'swiper/css/effect-cards';
 import "./testimonials.css"
+import allTestimonials, { Testimonial } from './allTestimonials'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules'
 const Testimonials = () => {
-    const liOne: any = useRef()
-    const liTwo: any = useRef()
-    const liThree: any = useRef()
     const testimonials: any = useRef()
     const [testiScrolled, setTestiScrolled] = useState(false)
-    let animationIndex = 1
     const scrollTestiSection = () => {
         if(testimonials.current){
             if(testimonials.current.offsetTop <= window.scrollY + 400){
@@ -21,82 +21,8 @@ const Testimonials = () => {
             }
         }
     }
-    const activeOne = () => {
-        document.querySelectorAll(".testi-shuffle li").forEach((li, index) => {
-            if(index === 0){
-                li.classList.add("active")
-                animationIndex = index;
-            }
-            else{
-                li.classList.remove("active")
-            }
-        })
-        document.querySelectorAll(".testimonials .person").forEach((person, index) => {
-            if(index === 0){
-                person.classList.add("active")
-                animationIndex = index;
-            }
-            else{
-                person.classList.remove("active")
-            }
-        })
-    }
-    const activeTwo =  () => {
-        document.querySelectorAll(".testi-shuffle li").forEach((li, index) => {
-            if(index === 1){
-                li.classList.add("active")
-                animationIndex = index;
-            }
-            else{
-                li.classList.remove("active")
-            }
-        })
-        document.querySelectorAll(".testimonials .person").forEach((person, index) => {
-            if(index === 1){
-                person.classList.add("active")
-            }
-            else{
-                person.classList.remove("active")
-            }
-        })
-    }
-    const activeThree =  () => {
-        document.querySelectorAll(".testi-shuffle li").forEach((li, index) => {
-            if(index === 2){
-                li.classList.add("active")
-                animationIndex = index;
-            }
-            else{
-                li.classList.remove("active")
-            }
-        })
-        document.querySelectorAll(".testimonials .person").forEach((person, index) => {
-            if(index === 2){
-                person.classList.add("active")
-            }
-            else{
-                person.classList.remove("active")
-            }
-        })
-    }
     useEffect(() => {
-        liOne.current.addEventListener("click", activeOne)
-        liTwo.current.addEventListener("click", activeTwo)
-        liThree.current.addEventListener("click", activeThree)
-
         window.addEventListener("scroll", scrollTestiSection)
-        setInterval(() => {
-            if(animationIndex === 0){
-                activeOne()
-                animationIndex++
-            }else if(animationIndex === 1){
-                activeTwo()
-                animationIndex++
-            }else if(animationIndex === 2){
-                activeThree()
-                animationIndex = 0;
-            }
-        }, 6000);
     },[])
   return (
     <section ref={testimonials} className={testiScrolled ? "testimonials" + " " + "testiScrolled" : "testimonials"} id="testimonials">
@@ -104,57 +30,77 @@ const Testimonials = () => {
         <h2>Testimonials</h2>
         <div className="container">
             <div className="content">
-                <ul className="testi-shuffle">
-                    <li ref={liOne} />
-                    <li ref={liTwo} className="active" />
-                    <li ref={liThree} />
-                </ul>   
-                <div className="person">
-                    <span className="qoute-icon">
-                        <FontAwesomeIcon icon={faQuoteLeft} />
-                    </span>
-                    <div className="img">
-                        <Image src={image24} alt="Image" loading={"lazy"}></Image>
-                    </div>
-                    <p className="arabic">
-                        محترف وسلس في التعامل. يتجاوب بشكل ممتاز مع التغييرات ويحول الأفكار
-                        إلى واقع. ممتاز جدا!
-                    </p>
-                    <div className="person-info">
-                        <span className="person-name">Al Salt Al Bahri</span>
-                        <span className="person-title">Client (Thrive AI)</span>
-                    </div>
+                <Swiper
+                    loop
+                    autoplay={{
+                        delay: 7000,
+                    }}
+                    slidesPerView= {1}
+                    spaceBetween={80}
+                    pagination={{
+                        clickable: true,
+                        el: `.pagination`
+                    }}
+                    modules={[Navigation, Pagination, Autoplay, EffectCoverflow]}
+                    navigation={{
+                        nextEl: `.featured-swiper-button-next`,
+                        prevEl: `.featured-swiper-button-prev`
+                    }}
+                    grabCursor={true}
+                    effect={'coverflow'}
+                    centeredSlides={true}
+                    coverflowEffect={{
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    }}
+                    className={`mySwiperProd`}
+                    autoHeight={true}
+                    > 
+                        {
+                            allTestimonials.map((testimonial: Testimonial) => {
+                                const flag = `https://flagcdn.com/w2560/${testimonial.countryCode.toLocaleLowerCase()}.png`
+                                return(
+                                    <SwiperSlide key={testimonial.id} className={"SwiperSlide"}>
+                                        <div className='person'>
+                                            <span className="qoute-icon">
+                                                <FontAwesomeIcon icon={faQuoteLeft} />
+                                            </span>
+                                            <div className="img">
+                                                <Image src={flag} alt={`${testimonial.country} flag image`} loading={"lazy"} width={2500} height={2500}></Image>
+                                            </div>
+                                            {
+                                                testimonial.textEn ? <p>{testimonial.textEn}</p> : null 
+                                            }
+                                            {
+                                                testimonial.textAr ? <p className="arabic">{testimonial.textAr}</p> : null 
+                                            }
+                                            <div className="person-info">
+                                                <span className="person-name">
+                                                    {testimonial.name}
+                                                </span>
+                                                <span className="person-title">
+                                                    {testimonial.title}
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                )
+                            })
+                        }
+                </Swiper>
+                <div className={"pagination-div"}>
+                    <div className={`pagination`}></div>
                 </div>
-                <div className="person active">
-                    <span className="qoute-icon">
-                        <FontAwesomeIcon icon={faQuoteLeft} />
-                    </span>
-                    <div className="img">
-                        <Image src={image25} alt="Image" loading={"lazy"}></Image>
-                        
-                    </div>
-                    <p>
-                        Very competent and patient, did exactly what we needed, prompt and
-                        high quality work. Would be delighted to work together again.
-                    </p>
-                    <div className="person-info">
-                        <span className="person-name">Philip Allan</span>
-                        <span className="person-title">An Upwork client</span>
-                    </div>
-                </div>
-                <div className="person">
-                    <span className="qoute-icon">
-                        <FontAwesomeIcon icon={faQuoteLeft} />
-                    </span>
-                    <div className="img">
-                        <Image src={image26} alt="Image" loading={"lazy"}></Image>
-                        
-                    </div>
-                    <p className="arabic">فنان ما شاء الله</p>
-                    <div className="person-info">
-                        <span className="person-name arabic">عبد العزيز العنزي</span>
-                        <span className="person-title">Triple Clean</span>
-                    </div>
+                <div className={"btns"}>
+                    <button className={`featured-swiper-button-prev`}>
+                        <FontAwesomeIcon icon={faChevronLeft} />
+                    </button>
+                    <button className={`featured-swiper-button-next`}>
+                        <FontAwesomeIcon icon={faChevronRight} />
+                    </button>
                 </div>
             </div>
         </div>
