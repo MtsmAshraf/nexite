@@ -1,6 +1,6 @@
 import React from 'react'
 import { faFacebookF, faGithub, faLinkedinIn, faUpwork, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import { faCircleDot, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faCircleDot, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "./social-ul.css"
 const SocialUl = () => {
@@ -8,12 +8,22 @@ const SocialUl = () => {
     <ul className="main-social-links">
         <li>
             <a
+                href="tel:+201014589984"
+                className="phone"
+                target="_blank"
+                title="Phone"
+            >
+            <FontAwesomeIcon icon={faPhone} />
+            </a>
+        </li>
+        <li>
+            <a
                 href="mailto:mo32000a@gmail.com"
                 className="gmail"
                 target="_blank"
                 title="Gmail"
             >
-            <FontAwesomeIcon icon={faPaperPlane} />
+            <FontAwesomeIcon icon={faEnvelope} />
             </a>
         </li>
         <li>
