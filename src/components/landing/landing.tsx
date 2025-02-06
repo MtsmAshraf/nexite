@@ -10,14 +10,12 @@ import image7 from "../../../public/assets/images/logos/bootstrap-4.svg"
 import image8 from "../../../public/assets/images/logos/sass-1.svg"
 import image9 from "../../../public/assets/images/logos/icons8-github.svg"
 import image10 from "../../../public/assets/images/logos/nextjs.svg"
-import image11 from "../../../public/assets/images/landing.png"
 // import myCv from "../../../public/assets/documents/Moatasim-Ashraf.pdf"
 
 import SocialUl from '../socialUl/socialUl'
 import DownloadButton from '../downloadBtn/downloadBtn'
 // import Link from 'next/link'
 
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 
 const Landing = () => {
