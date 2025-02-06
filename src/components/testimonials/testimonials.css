@@ -22,6 +22,7 @@ margin-bottom: 40px;
   /* height: 100%; */
   /* overflow: hidden; */
   /* padding-top: 60px; */
+  padding: 0;
   padding-bottom: 60px;
 }
 .testimonials .container .content{
@@ -32,6 +33,7 @@ margin-bottom: 40px;
   align-items: center; */
   /* height: 100%; */
   /* position: relative; */
+  width: 100%;
  }
 .testimonials .container .content .swiper{
   padding: 20px 70px;
@@ -165,6 +167,7 @@ margin-bottom: 40px;
 @media (max-width:600px) {
   .testimonials .container .person p{
       width: 100%;
+      font-size: 18px;
   }
 }
 @media (max-width:500px) {
