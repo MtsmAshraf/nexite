@@ -10,12 +10,15 @@ import image7 from "../../../public/assets/images/logos/bootstrap-4.svg"
 import image8 from "../../../public/assets/images/logos/sass-1.svg"
 import image9 from "../../../public/assets/images/logos/icons8-github.svg"
 import image10 from "../../../public/assets/images/logos/nextjs.svg"
-import image11 from "../../../public/assets/images/profile-removebg-preview.webp"
+import image11 from "../../../public/assets/images/landing.png"
 // import myCv from "../../../public/assets/documents/Moatasim-Ashraf.pdf"
 
 import SocialUl from '../socialUl/socialUl'
 import DownloadButton from '../downloadBtn/downloadBtn'
 // import Link from 'next/link'
+
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
 
 const Landing = () => {
     const [loaded, setLoaded] = useState(false)
@@ -27,59 +30,58 @@ const Landing = () => {
   return (
     <section className={loaded ? "landing" + " " + "loaded": "landing"} id="home">
         <div className="container">
-        <div className="text">
-            <h2>Moatasim Ashraf</h2>
-            <p>
-            No Introductions, here is
-            <a href="#skills"> my work</a>
-            </p>
-            <p>
-            And here is
-            <a
-                className="resume-link"
-                // href={"../../../public/Moatasim-Ashraf.pdf"}
-                href={"https://drive.google.com/file/d/1OOvgDG81ZoGjyR5AsUEG-IuxIjZ1jQ9E/view?usp=sharing"}
-                target="_blank"
-            >
-                {" "}
-                my Resume
-            </a>
-            <DownloadButton></DownloadButton>
-            </p>
-            <div className="skills-icons">
-            <span>
-                <Image src={image10} alt="Image" loading={"lazy"}></Image>
-            </span>
-            <span>
-                <Image src={image2} alt="Image" loading={"lazy"}></Image>
-            </span>
-            <span>
-                <Image src={image3} alt="Image" loading={"lazy"}></Image>
-            </span>
-            <span>
-                <Image src={image4} alt="Image" loading={"lazy"}></Image>
-            </span>
-            <span>
-                <Image src={image5} alt="Image" loading={"lazy"}></Image>
-            </span>
-            <span>
-                <Image src={image6} alt="Image" loading={"lazy"}></Image>
-            </span>
-            <span>
-                <Image src={image7} alt="Image" loading={"lazy"}></Image>
-            </span>
-            <span>
-                <Image src={image8} alt="Image" loading={"lazy"}></Image>
-            </span>
-            <span>
-                <Image src={image9} alt="Image" loading={"lazy"}></Image>
-            </span>
+            <div className="text">
+                <h2>Moatasim Ashraf</h2>
+                <h3>Next.js/React.js Front-End Developer</h3>
+                <p>
+                No Introductions, here is
+                <a href="#skills"> my work</a>
+                </p>
+                <p>
+                And here is
+                <a
+                    className="resume-link"
+                    // href={"../../../public/Moatasim-Ashraf.pdf"}
+                    href={"https://drive.google.com/file/d/1OOvgDG81ZoGjyR5AsUEG-IuxIjZ1jQ9E/view?usp=sharing"}
+                    target="_blank"
+                >
+                    {" "}
+                    my Resume
+                </a>
+                <DownloadButton></DownloadButton>
+                </p>
+                <div className="skills-icons">
+                <span>
+                    <Image src={image10} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                </span>
+                <span>
+                    <Image src={image2} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                </span>
+                <span>
+                    <Image src={image3} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                </span>
+                <span>
+                    <Image src={image4} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                </span>
+                <span>
+                    <Image src={image5} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                </span>
+                <span>
+                    <Image src={image6} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                </span>
+                <span>
+                    <Image src={image7} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                </span>
+                <span>
+                    <Image src={image8} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                </span>
+                <span>
+                    <Image src={image9} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                </span>
+                </div>
+                <SocialUl />
             </div>
-            <SocialUl />
-        </div>
-        <div className="img">
-            <Image src={image11} alt="Image" loading={"lazy"}></Image>
-        </div>
+        
         </div>
     </section>
   )

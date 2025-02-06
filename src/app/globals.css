@@ -147,8 +147,8 @@ a:hover:before{
 .container{
   margin-left: auto;
   margin-right: auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media (min-width:767px) {
   .container{

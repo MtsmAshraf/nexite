@@ -86,14 +86,41 @@ nav a svg{
 }
 @media (max-width: 600px) {
   nav{
-    top: 200px;
-    transform: translateX(120%) translateY(0%);
+    bottom: 50px;
+    right: 50%;
+    top: unset;
+    transform: translateX(50%) translateY(200px);
+    height: fit-content;
   }
   nav.loaded{
-    transform: translateX(0%) translateY(0%);
+    transform: translateX(50%) translateY(0%);
   }
   nav a svg{
     font-size: 14px;
+  }
+  nav ul{
+    flex-direction: row;
+  }
+  nav a span:first-child{
+    display: none;
+  }
+  nav ul li:nth-child(1) a{
+    border-radius: 6px 0px 0px 6px;
+  }
+  nav ul li:last-child a{
+    border-radius: 0px 6px 6px 0px;
+  }
+  nav ul li:nth-child(1) a:hover{
+    border-radius: 6px 0px 0px 6px !important;
+  }
+  nav ul li:last-child a:hover{
+    border-radius: 0px 6px 6px 0px !important;
+  }
+  nav a:hover{
+    background-color: var(--sec-color);
+  }
+  nav a:hover span:last-child{
+    opacity: 1;
   }
 }
 /* end nav */

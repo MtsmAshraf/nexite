@@ -48,7 +48,7 @@ const Hero = () => {
                                 className="project"
                                 style={{ borderColor: item.itemColor }}
                             >
-                                <Image src={item.src} alt={item.alt} loading={"lazy"}></Image>
+                                <Image src={item.src} alt={item.alt} loading={"lazy"} width={2000} height={2000}></Image>
                             </a>
                             <div className="details" style={{ borderColor: item.itemColor }}>
                                 <div className="project-info">
@@ -60,7 +60,7 @@ const Hero = () => {
                                                 return(
                                                     <li key={tech.id}>
                                                         <div className="img">
-                                                            <Image src={tech.imgSrc} alt={`${tech.name} image`} loading={"lazy"}></Image>
+                                                            <Image src={tech.imgSrc} alt={`${tech.name} image`} loading={"lazy"} width={2000} height={2000}></Image>
                                                         </div>
                                                         <span>{tech.name}</span>
                                                     </li>

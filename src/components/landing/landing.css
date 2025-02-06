@@ -1,23 +1,29 @@
 .landing{
-padding-top: 150px;
-height: 100vh;
-position: relative;
-background-image: url(../../../public/assets/images/hero-bg.svg);
-background-size: 150%;
-background-repeat: no-repeat;
-animation: change-gradient 5s linear 0s infinite forwards alternate;
-position: relative;
+    /* padding-top: 150px; */
+    height: 100dvh;
+    position: relative;
+    background-image: url(../../../public/assets/images/hero-bg.svg);
+    background-size: 150%;
+    background-repeat: no-repeat;
+    animation: change-gradient 5s linear 0s infinite forwards alternate;
+    position: relative;
 }
 .landing .container{
-display: flex;
-align-items: center;
-justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
 }
 .landing .container > div{
-height: 100%;
+    /* height: 100%; */
 }
 .landing .container .text{
-    width: 40%;
+    /* width: 40%; */
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     opacity: 0;
     transform: translateX(-100px);
     transition: var(--main-transition);
@@ -47,7 +53,6 @@ height: 100%;
     /* width: 300px; */
     color: var(--sec-color);
     font-weight: bold;
-    margin-bottom: 30px;
     transition: all 0.2s 0s linear;
     /* background-image: linear-gradient(45deg, white 10% ,var(--sec-color) 100%); */
     animation:  change-gradient 5s linear 0s infinite forwards alternate;
@@ -56,6 +61,14 @@ height: 100%;
     /* -webkit-background-clip: text; */
     /* -webkit-text-fill-color: transparent; */
     color: var(--sec-color);
+}
+.landing .container .text > h3{
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Federo",sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+
 }
 .landing .container .text > p{
     font-size: 18px;
@@ -148,13 +161,17 @@ height: 100%;
     object-fit: contain;
 }
 .landing .container > .img{
-    height: 450px;
-    width: 450px;
-    /* overflow: hidden; */
+    height: 600px;
+    max-height: calc(100vh);
+    flex: 1;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
     border-radius: 4px;
-    position: absolute;
-    bottom: 0;
     z-index: 1;
+
 }
 @media (min-width: 1300px) {
     .landing .container > .img{
@@ -166,28 +183,34 @@ height: 100%;
         right: 150px;
     }
 }
+.landing .container > .img  canvas{
+    object-fit: contain;
+}
 .landing .container > .img  img{
-transition: var(--main-transition);
-object-fit: contain;
-transform: scale(1.7) translateY(20%);
-transform-origin: 50% 100%;
-opacity: 0;
-transition: var(--main-transition);
-transition-timing-function: ease-in-out;
-transition-duration: 0.5s;
-transition-delay: 0.8s;
+    transition: var(--main-transition);
+    object-fit: contain;
+    height: 100%;
+    transform: translateY(20%);
+    transform-origin: 50% 100%;
+    opacity: 0;
+    transition: var(--main-transition);
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.8s;    
+    align-self: flex-end;
 }
 .landing.loaded .container > .img img{
     opacity: 1;
-    transform: scale(1.7) translateY(0%);
+    transform: translateY(0%);
 }
 .landing .container > .img::before{
     content: "";
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: -60px;
-    left: 0px;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: 1px solid var(--text-color);
     z-index: 2;
     border-radius: 10px;
@@ -222,7 +245,7 @@ transition-delay: 0.8s;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 60px;
+        /* gap: 60px; */
     }
     .landing .container > .img{
         /* position: relative; */
@@ -236,7 +259,7 @@ transition-delay: 0.8s;
     }
     .landing {
         background-image: linear-gradient(to bottom, var(--main-color) 50% ,var(--sec-color) 100% 100% );
-        min-height: 120vh;
+        /* min-height: 120vh; */
         padding-bottom: 0px !important;
         overflow: hidden;
 
@@ -247,7 +270,7 @@ transition-delay: 0.8s;
     .landing .container .text{
         width: 100%;
         margin-right: 0;
-        margin-bottom: 120px;
+        /* margin-bottom: 120px; */
     }
     .landing .bottom{
         flex-direction: row;
@@ -294,7 +317,11 @@ transition-delay: 0.8s;
 }
 @media (max-width: 450px){
     .landing{
-        min-height: 120vh;
+        /* min-height: 120vh; */
+    }
+    .landing .container .text > h2{
+        font-size: 42px;
+        margin-bottom: 10px;
     }
 }
 /* end landing */
