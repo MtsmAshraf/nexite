@@ -1,0 +1,100 @@
+import { StaticImageData } from "next/image";
+
+import thriveAi from "../../../public/assets/images/thrive-ai.webp"
+import alAssema from "../../../public/assets/images/al-assema.webp"
+import smartGeneration from "../../../public/assets/images/smart-generation.webp"
+import tripleClean from "../../../public/assets/images/triple-clean.webp"
+import vuertfolio from "../../../public/assets/images/vuertfolio.webp"
+import mo3Shop from "../../../public/assets/images/mo3shop.webp"
+import blackDash from "../../../public/assets/images/black-dash-1.webp"
+import bentofolio from "../../../public/assets/images/bentfolio.webp"
+import dashboard from "../../../public/assets/images/dashboard.webp"
+import stimulus from "../../../public/assets/images/stimulus.webp"
+import spaceTourism from "../../../public/assets/images/space.webp"
+import ramadanNight from "../../../public/assets/images/ramadan-nights-bg.webp"
+
+
+export type Project = {
+    id: string,
+    title: string,
+    link: string,
+    img: StaticImageData
+}
+
+
+const allProjects : Project[] = [
+    {
+        id: "1",
+        title: "Thrive AI",
+        link: "https://thrive-ai-nine.vercel.app/",
+        img: thriveAi
+    },
+    {
+        id: "2",
+        title: "Al-Assema",
+        link: "https://alassemacompressor.com",
+        img: alAssema
+    },
+    {
+        id: "3",
+        title: "Smart Generation",
+        link: "https://smart-generation-bay.vercel.app/",
+        img: smartGeneration
+    },
+    {
+        id: "4",
+        title: "Triple Clean",
+        link: "https://triple-clean-2-7kyc.vercel.app/",
+        img: tripleClean
+    },
+    {
+        id: "5",
+        title: "Vuertfolio",
+        link: "https://vuertfolio.netlify.app/",
+        img: vuertfolio
+    },
+    {
+        id: "6",
+        title: "Mo3Shop",
+        link: "https://mo3shop.vercel.app/",
+        img: mo3Shop
+    },
+    {
+        id: "7",
+        title: "Black Dash",
+        link: "https://black-dashboard-2.vercel.app/",
+        img: blackDash
+    },
+    {
+        id: "8",
+        title: "Bentofolio",
+        link: "https://bentfolio.vercel.app/",
+        img: bentofolio
+    },
+    {
+        id: "9",
+        title: "Dashboard",
+        link: "https://dashboard-sepia-six.vercel.app/",
+        img: dashboard
+    },
+    {
+        id: "10",
+        title: "Stimulus",
+        link: "https://stimulus-rho.vercel.app/",
+        img: stimulus
+    },
+    {
+        id: "11",
+        title: "Space Tourism",
+        link: "https://space-tourism-vert-two.vercel.app/",
+        img: spaceTourism
+    },
+    {
+        id: "12",
+        title: "Ramadan Night",
+        link: "https://ramadan-night.netlify.app/",
+        img: ramadanNight
+    }
+]
+
+export default allProjects;
