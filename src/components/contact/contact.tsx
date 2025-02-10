@@ -9,12 +9,14 @@ const Contact = () => {
   const username: any = useRef();
   const email: any = useRef();
   const msg: any = useRef();
-  const onsubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const body = new FormData(e.target as HTMLFormElement)
-    fetch("/api/sent", {
-      method: "POST",
-      body, 
+
+
+  
+  async function handlePaymentSuccess(userEmail: string, userName: string, sentMessage: string) {
+    await fetch("/api/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: userEmail, name: userName , message: sentMessage }),
     }).then(res => {
       if(res.status){
         setShowPopUp(true)
@@ -36,8 +38,10 @@ const Contact = () => {
           setWrong(false)
         }, 4000);
       }
-    })
-  }
+    });
+}
+
+
   return (
     <section className="contact parallax" id="contact">
         <div className={showPopUp ? "pop-up" + " " + "shown" : "pop-up"}>
@@ -72,7 +76,11 @@ const Contact = () => {
           <p>
             And I will email you back as soon as possible!
           </p>
-          <form onSubmit={onsubmit}>
+          <form onSubmit={(e) => {e.preventDefault();handlePaymentSuccess(
+            email.current.value,
+            username.current.value, 
+            msg.current.value
+          )}}>
               <div className="in">
                 <label htmlFor="">Your Name</label>
                 <input ref={username} required type="text" id="name" name='username' placeholder="Enter Your Name" />
