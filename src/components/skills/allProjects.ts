@@ -38,7 +38,7 @@ const allProjects : Project[] = [
     {
         id: "3",
         title: "Smart Generation",
-        link: "https://smart-generation-bay.vercel.app/",
+        link: "https://smartgeneration-eg.com",
         img: smartGeneration
     },
     {

@@ -162,7 +162,7 @@ const heroItems : HeroItemT[] = [
         title: "Smart Generation",
         description: "An introductory website for the Egyptian company Smart Generation, a leader in the fields of engineering, construction, engineering supplies, low-current systems, central cooling and air conditioning, plumbing works, and more.",
         note: "",
-        href: "https://smart-generation-bay.vercel.app/",
+        href: "https://smartgeneration-eg.com",
         src: image4,
         alt: "Smart Generation project image",
         techUsed: [
