@@ -75,45 +75,6 @@ const heroItems : HeroItemT[] = [
         itemColor: "#0077fe"
     },
     {
-        id: "2",
-        title: "Triple Clean",
-        description: "A car cleaning service for Grand Hayah hotel in Saudi Arabia",
-        note: "",
-        href: "https://triple-clean-2-7kyc.vercel.app/",
-        src: image2,
-        alt: "Triple Clean project image",
-        techUsed: [
-            {
-                id: "1",
-                name: "React.js",
-                imgSrc: image19
-            },
-            {
-                id: "2",
-                name: "HTML",
-                imgSrc: image14
-            },
-            {
-                id: "3",
-                name: "CSS",
-                imgSrc: image15
-            },
-            {
-                id: "4",
-                name: "JavaScript",
-                imgSrc: image16
-            },
-            {
-                id: "5",
-                name: "Github",
-                imgSrc: image17
-            },
-        ],
-        clientStars: [1,2,3,4,5],
-        clientRatingAr: "فنان ما شاء الله",
-        clientRatingEn: "An artist, Mashallah.",
-        itemColor: "#405ca8"
-    },{
         id: "3",
         title: "Al-Assema Compressor",
         description: "Al Assema Company is one of the leading companies specializing in compressed air technology, integrated engineering and industrial solutions, and production line equipment.",
@@ -157,7 +118,8 @@ const heroItems : HeroItemT[] = [
         clientRatingAr: "خمس نجوم في التعامل والجودة ووقت التنفيذ والاحترافية",
         clientRatingEn: "Five stars for communication, quality, delivery time, and professionalism",
         itemColor: "#14365c"
-    },{
+    },
+    {
         id: "4",
         title: "Smart Generation",
         description: "An introductory website for the Egyptian company Smart Generation, a leader in the fields of engineering, construction, engineering supplies, low-current systems, central cooling and air conditioning, plumbing works, and more.",
@@ -201,7 +163,47 @@ const heroItems : HeroItemT[] = [
         clientRatingAr: "",
         clientRatingEn: "",
         itemColor: "#e8af06"
-    }
+    },
+    {
+        id: "2",
+        title: "Triple Clean",
+        description: "A car cleaning service for Grand Hayah hotel in Saudi Arabia",
+        note: "",
+        href: "https://triple-clean-2-7kyc.vercel.app/",
+        src: image2,
+        alt: "Triple Clean project image",
+        techUsed: [
+            {
+                id: "1",
+                name: "React.js",
+                imgSrc: image19
+            },
+            {
+                id: "2",
+                name: "HTML",
+                imgSrc: image14
+            },
+            {
+                id: "3",
+                name: "CSS",
+                imgSrc: image15
+            },
+            {
+                id: "4",
+                name: "JavaScript",
+                imgSrc: image16
+            },
+            {
+                id: "5",
+                name: "Github",
+                imgSrc: image17
+            },
+        ],
+        clientStars: [1,2,3,4,5],
+        clientRatingAr: "فنان ما شاء الله",
+        clientRatingEn: "An artist, Mashallah.",
+        itemColor: "#405ca8"
+    },
 ]
 
 export default heroItems;
