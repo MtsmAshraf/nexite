@@ -4,6 +4,7 @@ import image1 from "../../../public/assets/images/thrive-ai.webp"
 import image2 from "../../../public/assets/images/triple-clean.webp"
 import image3 from "../../../public/assets/images/al-assema.webp"
 import image4 from "../../../public/assets/images/smart-generation.webp"
+import image5 from "../../../public/assets/images/abdelfttah-academy.webp"
 import image14 from "../../../public/assets/images/logos/html-5-logo.svg"
 import image15 from "../../../public/assets/images/logos/Official_CSS_new_Logo.png"
 import image16 from "../../../public/assets/images/logos/logo-javascript.svg"
@@ -34,6 +35,46 @@ export type HeroItemT = {
 }
 
 const heroItems : HeroItemT[] = [
+    {
+        id: "5",
+        title: "Abdalfttah Academy",
+        description: "An Educational website for registering and selling the courses of the passionate PhD candidate Mohmed Abdalfttah, in the field of biology and bioinformatics.",
+        note: "",
+        href: "https://www.abdalfttah-academy.com/",
+        src: image5,
+        alt: "Abdalfttah Academy project image",
+        techUsed: [
+            {
+                id: "1",
+                name: "Next.js",
+                imgSrc: image20
+            },
+            {
+                id: "2",
+                name: "HTML",
+                imgSrc: image14
+            },
+            {
+                id: "3",
+                name: "CSS",
+                imgSrc: image15
+            },
+            {
+                id: "4",
+                name: "TypeScript",
+                imgSrc: image21
+            },
+            {
+                id: "5",
+                name: "Github",
+                imgSrc: image17
+            },
+        ],
+        clientStars: [1,2,3,4,5],
+        clientRatingAr: "",
+        clientRatingEn: "",
+        itemColor: "#415ede"
+    },
     {
         id: "1",
         title: "Thrive AI",
