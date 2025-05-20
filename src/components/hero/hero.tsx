@@ -46,7 +46,7 @@ const Hero = () => {
                                 href={item.href}
                                 target="_blank"
                                 className="project"
-                                style={{ borderColor: item.itemColor }}
+                                style={{ borderColor: item.itemColor,  boxShadow: `0px 5px 17px -4px ${item.itemColor}` }}
                             >
                                 <Image src={item.src} alt={item.alt} loading={"lazy"} width={2000} height={2000}></Image>
                             </a>

@@ -71,8 +71,8 @@ const heroItems : HeroItemT[] = [
             },
         ],
         clientStars: [1,2,3,4,5],
-        clientRatingAr: "",
-        clientRatingEn: "",
+        clientRatingAr: "شخص محترف رائع — يتمتع بمرونة كبيرة، وسهل التعامل، ويقدّم دائمًا ما تطلبه بدقة. يبذل جهدًا إضافيًا لفهم احتياجاتك وتقديم حلول قيّمة ومخصصة. جودة الخدمة ممتازة، والأسعار تعكس قيمة رائعة. أوصي به بشدة!",
+        clientRatingEn: "An amazing professional — incredibly flexible, approachable, and always delivers exactly what you ask for. He go above and beyond to understand your needs and provide valuable, tailored solutions. The quality of service is outstanding, and the pricing reflects great value. Highly recommended!",
         itemColor: "#415ede"
     },
     {

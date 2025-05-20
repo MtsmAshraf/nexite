@@ -42,6 +42,14 @@ const allTestimonials : Testimonial[] = [
         country: "Egypt",
         countryCode: "eg",
         textAr: "خمس نجوم في التعامل والجودة والتسليم في الموعد والاحترافية",
+    },
+    {
+        id: "5",
+        name: "Mohmed Abdalfttah",
+        title: "Abdalfttah Academy",
+        country: "Spain",
+        countryCode: "es",
+        textEn: "An amazing professional — incredibly flexible, approachable, and always delivers exactly what you ask for. He go above and beyond to understand your needs and provide valuable, tailored solutions. The quality of service is outstanding, and the pricing reflects great value. Highly recommended!"
     }
 ]
 

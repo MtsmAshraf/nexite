@@ -109,8 +109,17 @@
 .hero .container .details .project-info .client-rating svg{
   color: yellow;
 }
+.hero .container .details .project-info .client-rating p{
+  font-size: 14px;
+}
 .hero .container .details .project-info .client-rating p:first-of-type{
   margin-top: 8px;
+  margin-bottom: 10px;
+}
+.hero .container .details .project-info .client-rating p:last-of-type{
+  line-height: 1.6;
+  border-top: 1px solid #fff;
+  padding-top: 10px;
 }
 .hero .container .details h2,
 .hero .container .details h3{

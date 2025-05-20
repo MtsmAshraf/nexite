@@ -54,6 +54,7 @@ margin-bottom: 40px;
 }
 .testimonials .container .content .btns button{
   background-color: var(--main-color);
+  background-color: #fff;
   color: var(--sec-color);
   width: 40px;
   height: 40px;
@@ -161,13 +162,17 @@ margin-bottom: 40px;
     background-color: var(--sec-color);
 }
 @media (max-width:992px) {
-  .testimonials{
+  .testimonials .container .person p:not(.arabic){
+    font-size: 16px;
   }
 }
 @media (max-width:600px) {
   .testimonials .container .person p{
       width: 100%;
       font-size: 18px;
+  }
+  .testimonials .container .person p:not(.arabic){
+    font-size: 14px;
   }
 }
 @media (max-width:500px) {
