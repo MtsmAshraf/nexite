@@ -32,9 +32,9 @@ nav a{
   border: 1px solid var(--sec-color);
   color: var(--text-color);
   transition: var(--main-transition);
-  background-color: var(--main-color-semi);
+  background-color: var(--main-color);
   backdrop-filter: blur(20px);
-  box-shadow: 2px 2px 24px -2px var(--sec-color);
+  /* box-shadow: 2px 2px 24px -2px var(--sec-color); */
   position: relative;
   isolation: isolate;
 }  
@@ -46,9 +46,10 @@ nav a span:first-child{
   position: absolute;
   right: -300%;
   top: 0;
-  background-color: var(--main-color-semi);
+  background-color: var(--sec-color);
+  color: var(--main-color);
   backdrop-filter: blur(20px);
-  box-shadow: 2px 2px 24px -2px var(--sec-color);
+  /* box-shadow: 2px 2px 24px -2px var(--sec-color); */
   border: 1px solid var(--sec-color);
   height: 100%;
   padding-left: 10px;
@@ -86,7 +87,7 @@ nav a svg{
 }
 @media (max-width: 600px) {
   nav{
-    bottom: 50px;
+    bottom: 20px;
     right: 50%;
     top: unset;
     transform: translateX(50%) translateY(200px);

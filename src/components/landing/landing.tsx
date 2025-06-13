@@ -8,9 +8,10 @@ import image5 from "../../../public/assets/images/logos/logo-javascript.svg"
 import image6 from "../../../public/assets/images/logos/tailwind-css.svg"
 import image7 from "../../../public/assets/images/logos/bootstrap-4.svg"
 import image8 from "../../../public/assets/images/logos/sass-1.svg"
-import image9 from "../../../public/assets/images/logos/icons8-github.svg"
-import image10 from "../../../public/assets/images/logos/nextjs.svg"
+import image9 from "../../../public/assets/images/logos/icons8-github-100.png"
+import image10 from "../../../public/assets/images/logos/icons8-next.js-100.png"
 // import myCv from "../../../public/assets/documents/Moatasim-Ashraf.pdf"
+import myProfile from "../../../public/assets/images/my-profile.png"
 
 import SocialUl from '../socialUl/socialUl'
 import DownloadButton from '../downloadBtn/downloadBtn'
@@ -29,6 +30,9 @@ const Landing = () => {
     <section className={loaded ? "landing" + " " + "loaded": "landing"} id="home">
         <div className="container">
             <div className="text">
+                <div className="profile">
+                    <Image src={myProfile} alt='Moatasim Ashraf Profile Picture'></Image>
+                </div>
                 <h2>Moatasim Ashraf</h2>
                 <h3>Next.js/React.js Front-End Developer</h3>
                 <p>

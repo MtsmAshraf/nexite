@@ -3,9 +3,10 @@
     height: 100dvh;
     position: relative;
     background-image: url(../../../public/assets/images/hero-bg.svg);
-    background-size: 150%;
+    /* background-size: 150%; */
     background-repeat: no-repeat;
-    animation: change-gradient 5s linear 0s infinite forwards alternate;
+    background-position: left bottom;
+    /* animation: change-gradient 5s linear 0s infinite forwards alternate; */
     position: relative;
 }
 .landing .container{
@@ -62,6 +63,23 @@
     /* -webkit-text-fill-color: transparent; */
     color: var(--sec-color);
 }
+.landing .container .text .profile{
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid var(--sec-color);
+    box-shadow: 2px 2px 34px -20px var(--sec-color);
+    margin-bottom: 20px;
+}
+.landing .container .text .profile img{
+    width: 100%;
+    object-fit: contain;
+    transform: scale(1.05);
+}
 .landing .container .text > h3{
     font-size: 16px;
     font-weight: normal;
@@ -102,6 +120,7 @@
     justify-content: center;
     position: relative;
     background-color: var(--sec-color-trans);
+    background-color: var(--main-color-semi);
     isolation: isolate;
     padding: 4px;
     border-radius: 50%;
@@ -258,7 +277,7 @@
         margin-bottom: 20px;
     }
     .landing {
-        background-image: linear-gradient(to bottom, var(--main-color) 50% ,var(--sec-color) 100% 100% );
+        /* background-image: linear-gradient(to bottom, var(--main-color) 50% ,var(--sec-color) 100% 100% ); */
         /* min-height: 120vh; */
         padding-bottom: 0px !important;
         overflow: hidden;
@@ -306,6 +325,13 @@
 @media (max-width: 600px){
     .landing .container .text .skills-icons img{
         width: 30px;
+    }
+    .landing .container .text .profile{
+        width: 120px;
+        height: 120px;
+    }
+    .landing .container .text > h2{
+        font-size: 50px;
     }
     .landing .text .bottom p a{
         font-size: 14px;
