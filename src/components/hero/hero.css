@@ -17,6 +17,11 @@
 .hero .project-logo img{
   object-fit: contain;
 }
+@media (max-width:640px) {
+  .hero .project-logo{
+    width: 150px;
+  }  
+}
 .hero .container .hero-item{
   display: flex;
   align-items: center;

@@ -5,7 +5,6 @@
   transition: var(--main-transition);
   text-align: center;
   margin-bottom: 20px;
-  font-size: 200px;
   font-family: "Federo",sans-serif;
   border-bottom: 1px solid var(--sec-color);
   width: fit-content;
@@ -14,10 +13,14 @@
   margin: 20px auto;
   color: var(--sec-color);
   font-size: 50px;
-  position: relative;
-  position: sticky;
 }
 .main-heading.scrolled{
     opacity: 1;
     transform: translateY(0%);
+}
+@media (max-width:640px) {
+  .main-heading{
+    font-size: 40px;
+  }
+  
 }
