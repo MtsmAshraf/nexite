@@ -2,23 +2,20 @@
 /* start hero */
 .hero{
   background-color: var(--main-color);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 80px;
+  /* padding-bottom: 100px; */
   height: auto;
 }
-.hero h1{
-  opacity: 0;
-  transform: translateY(50px);
-  transition: var(--main-transition);
-  color: var(--sec-color);
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 40px;
-  font-family: "Federo",sans-serif;
+.hero .project-logo{
+  /* background-color: red; */
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.hero.scrolled h1{
-  opacity: 1;
-  transform: translateY(0px);
+.hero .project-logo img{
+  object-fit: contain;
 }
 .hero .container .hero-item{
   display: flex;

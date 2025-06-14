@@ -18,7 +18,8 @@
   --whatsapp-color: #128c7e;
   --correct-color: #05a505;
   --error-color: #f01010;
-  --main-transition: all 0.2s 0s linear;
+  --main-transition: all 0.3s 0s cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition: cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 /* end vars */
 /* start global rules */

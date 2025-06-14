@@ -13,6 +13,12 @@ import image19 from "../../../public/assets/images/logos/react-2.svg"
 import image20 from "../../../public/assets/images/logos/icons8-next.js-100.png"
 import image21 from "../../../public/assets/images/logos/logo-typescript.svg"
 
+import abdelfttahLogo from "../../../public/assets/images/image-removebg-preview.png"
+import thriveAiLogo from "../../../public/assets/images/Thrive Ai-01.png"
+import alAssemaLogo from "../../../public/assets/images/logo-removebg.webp"
+import smartGenerationLogo from "../../../public/assets/images/logo.png"
+import tripleCleanLogo from "../../../public/assets/images/tri-logo-removebg-hd.png"
+
 type TechUsed = {
     id: string,
     name: string,
@@ -25,6 +31,7 @@ export type HeroItemT = {
     description: string,
     note: string,
     href: string,
+    projectLogo: StaticImageData,
     src: StaticImageData,
     alt: string,
     techUsed: TechUsed[],
@@ -41,6 +48,7 @@ const heroItems : HeroItemT[] = [
         description: "An Educational website for registering and selling the courses of the passionate PhD candidate Mohmed Abdalfttah, in the field of biology and bioinformatics.",
         note: "",
         href: "https://www.abdalfttah-academy.com/",
+        projectLogo: abdelfttahLogo,
         src: image5,
         alt: "Abdalfttah Academy project image",
         techUsed: [
@@ -81,6 +89,7 @@ const heroItems : HeroItemT[] = [
         description: "An Omani AI company for AI solutions for the goverment and the medical organizations in Oman",
         note: "[THE ORIGINAL CONTENT WAS REPLACED BY A DUMMY AS THE CLIENT REQUESTED]",
         href: "https://thrive-ai-nine.vercel.app",
+        projectLogo: thriveAiLogo,
         src: image1,
         alt: "Thrive AI project image",
         techUsed: [
@@ -121,6 +130,7 @@ const heroItems : HeroItemT[] = [
         description: "Al Assema Company is one of the leading companies specializing in compressed air technology, integrated engineering and industrial solutions, and production line equipment.",
         note: "",
         href: "https://alassemacompressor.com/en",
+        projectLogo: alAssemaLogo,
         src: image3,
         alt: "Al-Assema Compressors project image",
         techUsed: [
@@ -166,6 +176,7 @@ const heroItems : HeroItemT[] = [
         description: "An introductory website for the Egyptian company Smart Generation, a leader in the fields of engineering, construction, engineering supplies, low-current systems, central cooling and air conditioning, plumbing works, and more.",
         note: "",
         href: "https://smartgeneration-eg.com",
+        projectLogo: smartGenerationLogo,
         src: image4,
         alt: "Smart Generation project image",
         techUsed: [
@@ -211,6 +222,7 @@ const heroItems : HeroItemT[] = [
         description: "A car cleaning service for Grand Hayah hotel in Saudi Arabia",
         note: "",
         href: "https://triple-clean-2-7kyc.vercel.app/",
+        projectLogo: tripleCleanLogo,
         src: image2,
         alt: "Triple Clean project image",
         techUsed: [

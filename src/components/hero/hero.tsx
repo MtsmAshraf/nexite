@@ -8,6 +8,7 @@ import heroItems from "./heroItems"
 
 import "./hero.css"
 import HeroItem from './heroItem/heroItem'
+import MainHeading from '../MainHeading/MainHeading'
 const Hero = () => {
     const [scrolled, setScrolled] = useState(false)
     const heroSection: any = useRef()
@@ -27,13 +28,16 @@ const Hero = () => {
     
   return (
     <section ref={heroSection} className={scrolled ? "hero" + " " + "scrolled" : "hero"} id="latest">
-        <h1>My Latest Work</h1>
+        <MainHeading scrolled={scrolled}>My Latest Work</MainHeading>
         <div className="container">
             {
                 heroItems.map((item) => {
                     return(
                         <HeroItem key={item.id}>
-                            <h2 style={{color: item.itemColor}}>{item.title}</h2>
+                            <div className="project-logo">
+                                <Image src={item.projectLogo} alt={item.title + ` project logo`}></Image>
+                            </div>
+                            {/* <h2 style={{color: item.itemColor}}>{item.title}</h2> */}
                             <p>
                                 {item.description}
                             </p>

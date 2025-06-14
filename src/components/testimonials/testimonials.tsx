@@ -11,6 +11,7 @@ import "./testimonials.css"
 import allTestimonials, { Testimonial } from './allTestimonials'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules'
+import MainHeading from '../MainHeading/MainHeading';
 const Testimonials = () => {
     const testimonials: any = useRef()
     const [testiScrolled, setTestiScrolled] = useState(false)
@@ -18,6 +19,8 @@ const Testimonials = () => {
         if(testimonials.current){
             if(testimonials.current.offsetTop <= window.scrollY + 400){
                 setTestiScrolled(true)
+            }else{
+                setTestiScrolled(false)
             }
         }
     }
@@ -27,7 +30,7 @@ const Testimonials = () => {
   return (
     <section ref={testimonials} className={testiScrolled ? "testimonials" + " " + "testiScrolled" : "testimonials"} id="testimonials">
         <div className="overlay" />
-        <h2>Testimonials</h2>
+        <MainHeading scrolled={testiScrolled}>Testimonials</MainHeading>
         <div className="container">
             <div className="content">
                 <Swiper

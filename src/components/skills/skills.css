@@ -2,16 +2,17 @@
 /* start skills */
 .skills{
   padding-top: 0px;
-  padding-bottom: 0px;
-  display: flex;
+  padding-bottom: 100px;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   /* background-image: url(../../../public/assets/images/skills.webp); */
 
   background-size: cover;
   background-attachment: fixed;
   /* background-repeat: no-repeat; */
   height: fit-content;
+  border-bottom: 1px solid var(--sec-color);
 }
 .skills .container{
   display: flex;
@@ -19,12 +20,12 @@
   flex-direction: column;
 }
 .skills .container .box{
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
   width: 100%;
   text-align: center;
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateY(100px);
   transition: var(--main-transition);
 }
 .skills .container .box.scrolled{
@@ -32,7 +33,6 @@
   transform: translateY(0px);
 }
 .skills .container .box:first-of-type{
-  border-bottom: 1px solid var(--sec-color);
 }
 .skills .container .box:last-of-type{
   /* padding-left: 100px; */
@@ -409,7 +409,7 @@
 }
 @media (max-width:767px){
   .skills .container .box:nth-child(1){
-    border-bottom: 1px solid var(--sec-color);
+    /* border-bottom: 1px solid var(--sec-color); */
   }
   .skills .container .box h2{
       font-size: 34px;

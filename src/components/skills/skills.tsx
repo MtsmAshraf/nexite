@@ -5,6 +5,7 @@ import { faArrowRight, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import allProjects, { Project } from './allProjects'
+import MainHeading from '../MainHeading/MainHeading'
 
 const Skills = () => {
     const [showWork, setShowWork] = useState(false)
@@ -25,16 +26,16 @@ const Skills = () => {
     // ########################################
 
     
-    const [scrolledOne, setScrolledOne] = useState(false)
+    const [scrolled, setScrolled] = useState(false)
     // const [scrolledTwo, setScrolledTwo] = useState(false)
-    const boxOne: any = useRef()
+    const myWork: any = useRef()
     // const boxTwo: any = useRef()
-    const scrollboxOne = useCallback(() => {
-        if(boxOne.current){
-            if(boxOne.current.offsetTop <= scrollY + 350){
-                setScrolledOne(true)
+    const scrollMyWork = useCallback(() => {
+        if(myWork.current){
+            if(myWork.current.offsetTop <= scrollY + 350){
+                setScrolled(true)
             }else{
-                setScrolledOne(false)
+                setScrolled(false)
             }
         }
     },[])
@@ -48,14 +49,15 @@ const Skills = () => {
     //     }
     // },[])
     useEffect(()=> {
-        window.addEventListener("scroll",scrollboxOne)
+        window.addEventListener("scroll",scrollMyWork)
         // window.addEventListener("scroll",scrollboxTwo)
     })
 
 
     // ########################################
   return (
-    <section className="skills parallax" id="skills">
+    <section ref={myWork} className="skills parallax" id="skills">
+        <MainHeading scrolled={scrolled}>My Work</MainHeading>
         <div className={showWork ? "other-work" + " " + "shown": "other-work"}>
             <h1>My Work</h1>
             <FontAwesomeIcon onClick={() => {closeWork()}} icon={faXmark} />
@@ -76,15 +78,14 @@ const Skills = () => {
         </div>
         <div className="overlay" />
         <div className="container">
-            <div className={scrolledOne ? "box" + " " + "scrolled" : "box"} ref={boxOne}>
+            <div className={scrolled ? "box" + " " + "scrolled" : "box"}>
                 <h2>I design &amp; build stuff</h2>
                 <p>
-                Personal, Company, Events, Dashboard and More with different styles,
-                ideas and catergories. <br />
-                Check them out!
+                Personal websites, Companies websites, Events websites, Dashboard, SaaS, E-commerce and More in different styles,
+                ideas and catergories.
                 </p>
                 <button className='main-button' onClick={() => {openWork()}}>
-                    <span>SEE MY WORK</span>
+                    <span>Check them out!</span>
                     <FontAwesomeIcon icon={faArrowRight} />
                 </button>
             </div>
