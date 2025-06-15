@@ -90,7 +90,7 @@ margin-bottom: 40px;
   top: 50%;
   transform: translate(-50%,-50%);
   color: var(--sec-color);
-  opacity: 0.5;
+  opacity: 0.2;
 }
 .testimonials .container .person .img{
   width: 100px;

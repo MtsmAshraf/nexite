@@ -12,8 +12,10 @@ import image17 from "../../../public/assets/images/logos/icons8-github-light.svg
 import image19 from "../../../public/assets/images/logos/react-2.svg"
 import image20 from "../../../public/assets/images/logos/icons8-next.js-100.png"
 import image21 from "../../../public/assets/images/logos/logo-typescript.svg"
+import elNaggar from "../../../public/assets/images/al-nggar.png" 
 
 import abdelfttahLogo from "../../../public/assets/images/image-removebg-preview.png"
+import elNaggarLogo from "../../../public/assets/images/alnggar-logo.svg" 
 import thriveAiLogo from "../../../public/assets/images/Thrive Ai-01.png"
 import alAssemaLogo from "../../../public/assets/images/logo-removebg.webp"
 import smartGenerationLogo from "../../../public/assets/images/logo.png"
@@ -82,6 +84,37 @@ const heroItems : HeroItemT[] = [
         clientRatingAr: "شخص محترف رائع — يتمتع بمرونة كبيرة، وسهل التعامل، ويقدّم دائمًا ما تطلبه بدقة. يبذل جهدًا إضافيًا لفهم احتياجاتك وتقديم حلول قيّمة ومخصصة. جودة الخدمة ممتازة، والأسعار تعكس قيمة رائعة. أوصي به بشدة!",
         clientRatingEn: "An amazing professional — incredibly flexible, approachable, and always delivers exactly what you ask for. He go above and beyond to understand your needs and provide valuable, tailored solutions. The quality of service is outstanding, and the pricing reflects great value. Highly recommended!",
         itemColor: "#415ede"
+    },
+    {
+        id: "6",
+        title: "El-Naggar",
+        description: "The website of the academic researcher, Dr. Muhammad El-Naggar.",
+        note: "re-styling the website hosted on Fourthwall platfrom to match the client's visual identity",
+        href: "https://muhamedelnaggar.com/",
+        projectLogo: elNaggarLogo,
+        src: elNaggar,
+        alt: "Al-Naggar website project image",
+        techUsed: [
+            {
+                id: "1",
+                name: "HTML",
+                imgSrc: image14
+            },
+            {
+                id: "2",
+                name: "CSS",
+                imgSrc: image15
+            },
+            {
+                id: "3",
+                name: "JavaScript",
+                imgSrc: image16
+            },
+        ],
+        clientStars: [1,2,3,4,5],
+        clientRatingAr: "",
+        clientRatingEn: "",
+        itemColor: "#666"
     },
     {
         id: "1",

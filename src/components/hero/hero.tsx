@@ -42,7 +42,7 @@ const Hero = () => {
                                 {item.description}
                             </p>
                             {item.note &&  
-                                <p>
+                                <p className='note'>
                                     {item.note}
                                 </p>
                             }

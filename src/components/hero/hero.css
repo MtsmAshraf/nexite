@@ -13,9 +13,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10px;
 }
 .hero .project-logo img{
   object-fit: contain;
+  height: 100%;
+}
+.hero .hero-item:nth-child(2) .project-logo img{ /* Al-Naggar logo */
+  filter: invert(100%);
 }
 @media (max-width:640px) {
   .hero .project-logo{
@@ -50,6 +55,13 @@
 .hero .container .hero-item > p{
   line-height: 1.4;
   text-align: center;
+  /* background-color: red; */
+}
+.hero .container .hero-item > p.note{
+  background-color: var(--sec-color);
+  color: var(--main-color);
+  padding: 2px 10px;
+  margin-top: 5px;
 }
 .hero .container .hero-item > a{
   margin-top: 20px;

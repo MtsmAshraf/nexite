@@ -1,7 +1,7 @@
-
 /* start header */
 .header{
     /* overflow: hidden; */
+    /* display: none; */
     position: fixed;
     left: 50%;
     transform: translateX(-50%) translateY(-120%);
@@ -24,10 +24,10 @@
     justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
-    border-bottom: 1px solid var(--sec-color);
+    /* border-bottom: 1px solid var(--sec-color); */
     border-radius: 0px 0px 8px 8px;
-    box-shadow: 2px 2px 44px -10px var(--sec-color);
-    background-color: var(--main-color-sem);
+    box-shadow: 2px 2px 44px -10px var(--main-color);
+    /* background-color: var(--main-color-sem); */
     /* backdrop-filter: blur(60px); */
     background-color: var(--main-color);
   }

@@ -1,5 +1,6 @@
 import { StaticImageData } from "next/image";
 
+import elNaggar from "../../../public/assets/images/al-nggar.png" 
 import abdalfttahAcademy from "../../../public/assets/images/abdelfttah-academy.webp" 
 import thriveAi from "../../../public/assets/images/thrive-ai.webp"
 import alAssema from "../../../public/assets/images/al-assema.webp"
@@ -29,7 +30,14 @@ const allProjects : Project[] = [
         title: "Abdalfttah Academy",
         link: "https://www.abdalfttah-academy.com/",
         img: abdalfttahAcademy
-    },{
+    },
+    {
+        id: "14",
+        title: "El-Naggar",
+        link: "https://muhamedelnaggar.com/",
+        img: elNaggar
+    },
+    {
         id: "1",
         title: "Thrive AI",
         link: "https://thrive-ai-nine.vercel.app/",
