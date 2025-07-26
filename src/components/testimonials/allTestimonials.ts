@@ -58,6 +58,14 @@ const allTestimonials : Testimonial[] = [
         country: "Egypt",
         countryCode: "eg",
         textEn: "Perfect!"
+    },
+    {
+        id: "7",
+        name: "Faris Alshehri",
+        title: "Sahl Cars",
+        country: "Saudi Arabia",
+        countryCode: "sa",
+        textAr: "شهادة لله هذا شخص يخاف الله في عمله وتعامله تعامل بكل أخلاق و ذمة اتشرفت بالأخ معتصم و هذا مو آخر تعامل"
     }
 ]
 

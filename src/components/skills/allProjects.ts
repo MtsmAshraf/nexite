@@ -16,6 +16,7 @@ import spaceTourism from "../../../public/assets/images/space.webp"
 import ramadanNight from "../../../public/assets/images/ramadan-nights-bg.webp"
 import icsf from "../../../public/assets/images/icsf.png"
 import alMahdy from "../../../public/assets/images/al-mahdy.png"
+import sahlCars from "../../../public/assets/images/sahl-cars.png"
 
 
 export type Project = {
@@ -74,6 +75,12 @@ const allProjects : Project[] = [
         title: "Triple Clean",
         link: "https://triple-clean-2-7kyc.vercel.app/",
         img: tripleClean
+    },
+    {
+        id: "17",
+        title: "Sahl Cars",
+        link: "https://sahlcars.com/",
+        img: sahlCars
     },
     {
         id: "5",

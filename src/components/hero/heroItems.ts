@@ -15,6 +15,7 @@ import image21 from "../../../public/assets/images/logos/logo-typescript.svg"
 import elNaggar from "../../../public/assets/images/al-nggar.png" 
 import icsf from "../../../public/assets/images/icsf.png" 
 import alMahdy from "../../../public/assets/images/al-mahdy.png" 
+import sahlCars from "../../../public/assets/images/sahl-cars.png" 
 
 import abdelfttahLogo from "../../../public/assets/images/image-removebg-preview.png"
 import elNaggarLogo from "../../../public/assets/images/alnggar-logo.svg" 
@@ -24,6 +25,7 @@ import smartGenerationLogo from "../../../public/assets/images/logo.png"
 import tripleCleanLogo from "../../../public/assets/images/tri-logo-removebg-hd.png"
 import icsfLogo from "../../../public/assets/images/icsf-logo.png"
 import alMahdyLogo from "../../../public/assets/images/al-mahdy-logo.png"
+import sahlCarsLogo from "../../../public/assets/images/sahl-cars-logo.webp"
 
 type TechUsed = {
     id: string,
@@ -379,6 +381,52 @@ const heroItems : HeroItemT[] = [
         clientRatingAr: "فنان ما شاء الله",
         clientRatingEn: "An artist, Mashallah.",
         itemColor: "#405ca8"
+    },
+    {
+        id: "9",
+        title: "Sahl Cars",
+        description: "The Website of Sahl Cars for Financing cars in Saudi Arabia",
+        note: "",
+        href: "https://sahlcars.com/",
+        projectLogo: sahlCarsLogo,
+        src: sahlCars,
+        alt: "Sahl Cars project",
+        techUsed: [
+            {
+                id: "1",
+                name: "Next.js",
+                imgSrc: image20
+            },
+            {
+                id: "2",
+                name: "React.js",
+                imgSrc: image19
+            },
+            {
+                id: "3",
+                name: "HTML",
+                imgSrc: image14
+            },
+            {
+                id: "4",
+                name: "CSS",
+                imgSrc: image15
+            },
+            {
+                id: "5",
+                name: "TypeScript",
+                imgSrc: image21
+            },
+            {
+                id: "6",
+                name: "Github",
+                imgSrc: image17
+            },
+        ],
+        clientStars: [1,2,3,4,5],
+        clientRatingAr: "شهادة لله هذا شخص يخاف الله في عمله وتعامله تعامل بكل أخلاق و ذمة اتشرفت بالأخ معتصم و هذا مو آخر تعامل",
+        clientRatingEn: "Honestly, this is a person who fears God in his work and dealings. He treats others with the utmost ethics and integrity. It was an honor dealing with Brother Moatasim, and this will definitely not be the last time we work together.",
+        itemColor: "#38207f",
     },
 ]
 
