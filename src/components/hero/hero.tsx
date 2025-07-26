@@ -92,11 +92,11 @@ const Hero = () => {
                                             })
                                         }
                                     </ul>
-                                    <p className="arabic">
-                                        {item.clientRatingAr}
-                                    </p>
                                     <p>
                                         {item.clientRatingEn}
+                                    </p>
+                                    <p className="arabic">
+                                        {item.clientRatingAr}
                                     </p>
                                 </div>
                                 </div>

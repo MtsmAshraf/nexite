@@ -13,6 +13,8 @@ import image19 from "../../../public/assets/images/logos/react-2.svg"
 import image20 from "../../../public/assets/images/logos/icons8-next.js-100.png"
 import image21 from "../../../public/assets/images/logos/logo-typescript.svg"
 import elNaggar from "../../../public/assets/images/al-nggar.png" 
+import icsf from "../../../public/assets/images/icsf.png" 
+import alMahdy from "../../../public/assets/images/al-mahdy.png" 
 
 import abdelfttahLogo from "../../../public/assets/images/image-removebg-preview.png"
 import elNaggarLogo from "../../../public/assets/images/alnggar-logo.svg" 
@@ -20,6 +22,8 @@ import thriveAiLogo from "../../../public/assets/images/Thrive Ai-01.png"
 import alAssemaLogo from "../../../public/assets/images/logo-removebg.webp"
 import smartGenerationLogo from "../../../public/assets/images/logo.png"
 import tripleCleanLogo from "../../../public/assets/images/tri-logo-removebg-hd.png"
+import icsfLogo from "../../../public/assets/images/icsf-logo.png"
+import alMahdyLogo from "../../../public/assets/images/al-mahdy-logo.png"
 
 type TechUsed = {
     id: string,
@@ -31,7 +35,7 @@ export type HeroItemT = {
     id: string,
     title: string,
     description: string,
-    note: string,
+    note?: string,
     href: string,
     projectLogo: StaticImageData,
     src: StaticImageData,
@@ -52,7 +56,7 @@ const heroItems : HeroItemT[] = [
         href: "https://www.abdalfttah-academy.com/",
         projectLogo: abdelfttahLogo,
         src: image5,
-        alt: "Abdalfttah Academy project image",
+        alt: "Abdalfttah Academy project",
         techUsed: [
             {
                 id: "1",
@@ -86,37 +90,6 @@ const heroItems : HeroItemT[] = [
         itemColor: "#415ede"
     },
     {
-        id: "6",
-        title: "El-Naggar",
-        description: "The website of the academic researcher, Dr. Muhammad El-Naggar.",
-        note: "re-styling the website hosted on Fourthwall platfrom to match the client's visual identity",
-        href: "https://muhamedelnaggar.com/",
-        projectLogo: elNaggarLogo,
-        src: elNaggar,
-        alt: "Al-Naggar website project image",
-        techUsed: [
-            {
-                id: "1",
-                name: "HTML",
-                imgSrc: image14
-            },
-            {
-                id: "2",
-                name: "CSS",
-                imgSrc: image15
-            },
-            {
-                id: "3",
-                name: "JavaScript",
-                imgSrc: image16
-            },
-        ],
-        clientStars: [1,2,3,4,5],
-        clientRatingAr: "",
-        clientRatingEn: "",
-        itemColor: "#666"
-    },
-    {
         id: "1",
         title: "Thrive AI",
         description: "An Omani AI company for AI solutions for the goverment and the medical organizations in Oman",
@@ -124,7 +97,7 @@ const heroItems : HeroItemT[] = [
         href: "https://thrive-ai-nine.vercel.app",
         projectLogo: thriveAiLogo,
         src: image1,
-        alt: "Thrive AI project image",
+        alt: "Thrive AI project",
         techUsed: [
             {
                 id: "1",
@@ -158,6 +131,77 @@ const heroItems : HeroItemT[] = [
         itemColor: "#0077fe"
     },
     {
+        id: "7",
+        title: "ICSF",
+        description: "The Website of International Center for Safety & Fire Company specialized in Comprehensive fire safety solutions, fire alarm systems, and emergency response training.",
+        href: "https://www.icsf-eg.com",
+        projectLogo: icsfLogo,
+        src: icsf,
+        alt: "ICSF - International Center for Safety & Fire Company website project",
+        techUsed: [
+            {
+                id: "1",
+                name: "Next.js",
+                imgSrc: image20
+            },
+            {
+                id: "2",
+                name: "HTML",
+                imgSrc: image14
+            },
+            {
+                id: "3",
+                name: "CSS",
+                imgSrc: image15
+            },
+            {
+                id: "4",
+                name: "TypeScript",
+                imgSrc: image21
+            },
+            {
+                id: "5",
+                name: "Github",
+                imgSrc: image17
+            },
+        ],
+        clientStars: [1,2,3,4,5],
+        clientRatingAr: "ممتاز",
+        clientRatingEn: "Perfect",
+        itemColor: "#cf292b"
+    },
+    {
+        id: "6",
+        title: "El-Naggar",
+        description: "The website of the academic researcher, Dr. Muhammad El-Naggar.",
+        note: "re-styling the website hosted on Fourthwall platfrom to match the client's visual identity",
+        href: "https://muhamedelnaggar.com/",
+        projectLogo: elNaggarLogo,
+        src: elNaggar,
+        alt: "Al-Naggar website project",
+        techUsed: [
+            {
+                id: "1",
+                name: "HTML",
+                imgSrc: image14
+            },
+            {
+                id: "2",
+                name: "CSS",
+                imgSrc: image15
+            },
+            {
+                id: "3",
+                name: "JavaScript",
+                imgSrc: image16
+            },
+        ],
+        clientStars: [1,2,3,4,5],
+        clientRatingAr: "",
+        clientRatingEn: "",
+        itemColor: "#666"
+    },
+    {
         id: "3",
         title: "Al-Assema Compressor",
         description: "Al Assema Company is one of the leading companies specializing in compressed air technology, integrated engineering and industrial solutions, and production line equipment.",
@@ -165,7 +209,7 @@ const heroItems : HeroItemT[] = [
         href: "https://alassemacompressor.com/en",
         projectLogo: alAssemaLogo,
         src: image3,
-        alt: "Al-Assema Compressors project image",
+        alt: "Al-Assema Compressors project",
         techUsed: [
             {
                 id: "1",
@@ -204,6 +248,52 @@ const heroItems : HeroItemT[] = [
         itemColor: "#14365c"
     },
     {
+        id: "8",
+        title: "Al-Mahdy",
+        description: "The Website of Al Mahdy Safety for Industrial Safety Services",
+        note: "",
+        href: "https://al-mahdy.vercel.app/",
+        projectLogo: alMahdyLogo,
+        src: alMahdy,
+        alt: "Al-Mahdy project",
+        techUsed: [
+            {
+                id: "1",
+                name: "Next.js",
+                imgSrc: image20
+            },
+            {
+                id: "2",
+                name: "React.js",
+                imgSrc: image19
+            },
+            {
+                id: "3",
+                name: "HTML",
+                imgSrc: image14
+            },
+            {
+                id: "4",
+                name: "CSS",
+                imgSrc: image15
+            },
+            {
+                id: "5",
+                name: "TypeScript",
+                imgSrc: image21
+            },
+            {
+                id: "6",
+                name: "Github",
+                imgSrc: image17
+            },
+        ],
+        clientStars: [1,2,3,4,5],
+        clientRatingAr: "",
+        clientRatingEn: "",
+        itemColor: "#ad2424",
+    },
+    {
         id: "4",
         title: "Smart Generation",
         description: "An introductory website for the Egyptian company Smart Generation, a leader in the fields of engineering, construction, engineering supplies, low-current systems, central cooling and air conditioning, plumbing works, and more.",
@@ -211,7 +301,7 @@ const heroItems : HeroItemT[] = [
         href: "https://smartgeneration-eg.com",
         projectLogo: smartGenerationLogo,
         src: image4,
-        alt: "Smart Generation project image",
+        alt: "Smart Generation project",
         techUsed: [
             {
                 id: "1",
@@ -257,7 +347,7 @@ const heroItems : HeroItemT[] = [
         href: "https://triple-clean-2-7kyc.vercel.app/",
         projectLogo: tripleCleanLogo,
         src: image2,
-        alt: "Triple Clean project image",
+        alt: "Triple Clean project",
         techUsed: [
             {
                 id: "1",

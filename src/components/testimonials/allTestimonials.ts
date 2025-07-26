@@ -50,6 +50,14 @@ const allTestimonials : Testimonial[] = [
         country: "Spain",
         countryCode: "es",
         textEn: "An amazing professional — incredibly flexible, approachable, and always delivers exactly what you ask for. He go above and beyond to understand your needs and provide valuable, tailored solutions. The quality of service is outstanding, and the pricing reflects great value. Highly recommended!"
+    },
+    {
+        id: "6",
+        name: "Islam Mahrous",
+        title: "ICSF",
+        country: "Egypt",
+        countryCode: "eg",
+        textEn: "Perfect!"
     }
 ]
 

@@ -19,7 +19,7 @@
   object-fit: contain;
   height: 100%;
 }
-.hero .hero-item:nth-child(2) .project-logo img{ /* Al-Naggar logo */
+.hero .hero-item:nth-child(4) .project-logo img{ /* Al-Naggar logo */
   filter: invert(100%);
 }
 @media (max-width:640px) {
@@ -123,8 +123,12 @@
 .hero .container .details .project-info .client-rating svg{
   color: yellow;
 }
+.hero .container .details .project-info .client-rating ul{
+  margin-bottom: 10px;
+}
 .hero .container .details .project-info .client-rating p{
   font-size: 14px;
+  width: 100%;
 }
 .hero .container .details .project-info .client-rating p:first-of-type{
   margin-top: 8px;

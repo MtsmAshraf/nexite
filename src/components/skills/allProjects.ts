@@ -14,6 +14,8 @@ import dashboard from "../../../public/assets/images/dashboard.webp"
 import stimulus from "../../../public/assets/images/stimulus.webp"
 import spaceTourism from "../../../public/assets/images/space.webp"
 import ramadanNight from "../../../public/assets/images/ramadan-nights-bg.webp"
+import icsf from "../../../public/assets/images/icsf.png"
+import alMahdy from "../../../public/assets/images/al-mahdy.png"
 
 
 export type Project = {
@@ -32,22 +34,34 @@ const allProjects : Project[] = [
         img: abdalfttahAcademy
     },
     {
-        id: "14",
-        title: "El-Naggar",
-        link: "https://muhamedelnaggar.com/",
-        img: elNaggar
-    },
-    {
         id: "1",
         title: "Thrive AI",
         link: "https://thrive-ai-nine.vercel.app/",
         img: thriveAi
     },
     {
+        id: "15",
+        title: "ICSF",
+        link: "https://www.icsf-eg.com",
+        img: icsf
+    },
+    {
+        id: "14",
+        title: "El-Naggar",
+        link: "https://muhamedelnaggar.com/",
+        img: elNaggar
+    },
+    {
         id: "2",
         title: "Al-Assema",
         link: "https://alassemacompressor.com",
         img: alAssema
+    },
+    {
+        id: "16",
+        title: "Al Mahdy",
+        link: "https://al-mahdy.vercel.app/",
+        img: alMahdy
     },
     {
         id: "3",
