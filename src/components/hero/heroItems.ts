@@ -12,10 +12,16 @@ import image17 from "../../../public/assets/images/logos/icons8-github-light.svg
 import image19 from "../../../public/assets/images/logos/react-2.svg"
 import image20 from "../../../public/assets/images/logos/icons8-next.js-100.png"
 import image21 from "../../../public/assets/images/logos/logo-typescript.svg"
+import wordpress from "../../../public/assets/images/logos/wordpress-icon.svg"
+import elementor from "../../../public/assets/images/logos/elementor-icon.svg"
+import hostinger from "../../../public/assets/images/logos/hostinger.svg"
+
+
 import elNaggar from "../../../public/assets/images/al-nggar.png" 
 import icsf from "../../../public/assets/images/icsf.png" 
 import alMahdy from "../../../public/assets/images/al-mahdy.png" 
 import sahlCars from "../../../public/assets/images/sahl-cars.png" 
+import byteStore from "../../../public/assets/images/byte-store.png" 
 
 import abdelfttahLogo from "../../../public/assets/images/image-removebg-preview.png"
 import elNaggarLogo from "../../../public/assets/images/alnggar-logo.svg" 
@@ -26,6 +32,7 @@ import tripleCleanLogo from "../../../public/assets/images/tri-logo-removebg-hd.
 import icsfLogo from "../../../public/assets/images/icsf-logo.png"
 import alMahdyLogo from "../../../public/assets/images/al-mahdy-logo.png"
 import sahlCarsLogo from "../../../public/assets/images/sahl-cars-logo.webp"
+import byteStoreLogo from "../../../public/assets/images/byte-store-logo.png"
 
 type TechUsed = {
     id: string,
@@ -50,6 +57,7 @@ export type HeroItemT = {
 }
 
 const heroItems : HeroItemT[] = [
+    // hightest id => 10
     {
         id: "5",
         title: "Abdalfttah Academy",
@@ -131,6 +139,36 @@ const heroItems : HeroItemT[] = [
         clientRatingAr: "محترف وسلس في التعامل. يتجاوب بشكل ممتاز مع التغييرات ويحول الأفكار إلى واقع. ممتاز جدا!",
         clientRatingEn: "Professional and smooth in dealing. Responds excellently to changes and turns ideas into reality. Very excellent!",
         itemColor: "#0077fe"
+    },
+    {
+        id: "10",
+        title: "Byte Store",
+        description: "A PC store, specialized in used and new PCs and laptops and their accessories ",
+        href: "https://byte-eg.com/",
+        projectLogo: byteStoreLogo,
+        src: byteStore,
+        alt: "Byte Store Project",
+        techUsed: [
+            {
+                id: "1",
+                name: "WordPress",
+                imgSrc: wordpress
+            },
+            {
+                id: "2",
+                name: "Elementor",
+                imgSrc: elementor
+            },
+            {
+                id: "3",
+                name: "Hostinger",
+                imgSrc: hostinger
+            }
+        ],
+        clientStars: [1,2,3,4,5],
+        clientRatingAr: "",
+        clientRatingEn: "",
+        itemColor: "#102d4e"
     },
     {
         id: "7",

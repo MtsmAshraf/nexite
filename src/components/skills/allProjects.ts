@@ -17,6 +17,7 @@ import ramadanNight from "../../../public/assets/images/ramadan-nights-bg.webp"
 import icsf from "../../../public/assets/images/icsf.png"
 import alMahdy from "../../../public/assets/images/al-mahdy.png"
 import sahlCars from "../../../public/assets/images/sahl-cars.png"
+import byteStore from "../../../public/assets/images/byte-store.png"
 
 
 export type Project = {
@@ -28,11 +29,18 @@ export type Project = {
 
 
 const allProjects : Project[] = [
+    // hightest id => 18
     {
         id: "13",
         title: "Abdalfttah Academy",
         link: "https://www.abdalfttah-academy.com/",
         img: abdalfttahAcademy
+    },
+    {
+        id: "18",
+        title: "Byte Store",
+        link: "https://byte-eg.com/",
+        img: byteStore
     },
     {
         id: "1",
