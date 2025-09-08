@@ -100,6 +100,36 @@ const heroItems : HeroItemT[] = [
         itemColor: "#415ede"
     },
     {
+        id: "10",
+        title: "Byte Store",
+        description: "A PC store, specialized in used and new PCs and laptops and their accessories ",
+        href: "https://byte-eg.com/",
+        projectLogo: byteStoreLogo,
+        src: byteStore,
+        alt: "Byte Store Project",
+        techUsed: [
+            {
+                id: "1",
+                name: "WordPress",
+                imgSrc: wordpress
+            },
+            {
+                id: "2",
+                name: "Elementor",
+                imgSrc: elementor
+            },
+            {
+                id: "3",
+                name: "Hostinger",
+                imgSrc: hostinger
+            }
+        ],
+        clientStars: [1,2,3,4,5],
+        clientRatingAr: "",
+        clientRatingEn: "",
+        itemColor: "#102d4e"
+    },
+    {
         id: "1",
         title: "Thrive AI",
         description: "An Omani AI company for AI solutions for the goverment and the medical organizations in Oman",
@@ -139,36 +169,6 @@ const heroItems : HeroItemT[] = [
         clientRatingAr: "محترف وسلس في التعامل. يتجاوب بشكل ممتاز مع التغييرات ويحول الأفكار إلى واقع. ممتاز جدا!",
         clientRatingEn: "Professional and smooth in dealing. Responds excellently to changes and turns ideas into reality. Very excellent!",
         itemColor: "#0077fe"
-    },
-    {
-        id: "10",
-        title: "Byte Store",
-        description: "A PC store, specialized in used and new PCs and laptops and their accessories ",
-        href: "https://byte-eg.com/",
-        projectLogo: byteStoreLogo,
-        src: byteStore,
-        alt: "Byte Store Project",
-        techUsed: [
-            {
-                id: "1",
-                name: "WordPress",
-                imgSrc: wordpress
-            },
-            {
-                id: "2",
-                name: "Elementor",
-                imgSrc: elementor
-            },
-            {
-                id: "3",
-                name: "Hostinger",
-                imgSrc: hostinger
-            }
-        ],
-        clientStars: [1,2,3,4,5],
-        clientRatingAr: "",
-        clientRatingEn: "",
-        itemColor: "#102d4e"
     },
     {
         id: "7",
