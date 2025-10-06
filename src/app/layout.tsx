@@ -61,7 +61,6 @@ export const metadata: Metadata = {
     canonical: "https://moatasimashraf.com",
   },
 };
-};
 
 export default function RootLayout({
   children,
