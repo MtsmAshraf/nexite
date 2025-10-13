@@ -66,6 +66,14 @@ const allTestimonials : Testimonial[] = [
         country: "Saudi Arabia",
         countryCode: "sa",
         textAr: "شهادة لله هذا شخص يخاف الله في عمله وتعامله تعامل بكل أخلاق و ذمة اتشرفت بالأخ معتصم و هذا مو آخر تعامل"
+    },
+    {
+        id: "8",
+        name: "Abdullah Rashad",
+        title: "Al Mahdy",
+        country: "Egypt",
+        countryCode: "eg",
+        textAr: "ممتاز"
     }
 ]
 

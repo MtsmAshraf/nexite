@@ -69,7 +69,7 @@ const allProjects : Project[] = [
     {
         id: "16",
         title: "Al Mahdy",
-        link: "https://al-mahdy.vercel.app/",
+        link: "https://almahdy-eg.com/",
         img: alMahdy
     },
     {
