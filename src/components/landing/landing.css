@@ -2,11 +2,16 @@
     /* padding-top: 150px; */
     height: 100dvh;
     position: relative;
-    background-image: url(../../../public/assets/images/hero-bg.svg);
-    /* background-size: 150%; */
+    background-image: 
+    url(../../../public/assets/images/hero-bg.svg)
+    ,
+    linear-gradient(hsl(0 0% 0% / 0.8))
+    ,
+    url(../../../public/assets/images/hero-bg.jpg)
+    ;
     background-repeat: no-repeat;
     background-position: left bottom;
-    /* animation: change-gradient 5s linear 0s infinite forwards alternate; */
+    background-size: cover;
     position: relative;
 }
 .landing .container{
@@ -254,6 +259,34 @@
     width: 100%;
     z-index: 3;
 }
+
+.landing .down-btn{
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 40px;
+  color: #fff;
+  z-index: 2;
+  animation: bounce 1.5s infinite;
+}   
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) translateX(-50%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(10px) translateX(-50%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px) translateX(-50%);
+  }
+}
 @media (max-width:992px) {
     .landing .bottom{
     }
@@ -339,6 +372,9 @@
     .landing .container .text .skills-icons{
         padding-left: 20px;
         padding-rightn: 20px;
+    }
+    .landing .down-btn{
+        bottom: 120px;
     }
 }
 @media (max-width: 450px){

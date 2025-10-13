@@ -15,6 +15,8 @@ import myProfile from "../../../public/assets/images/my-profile.png"
 
 import SocialUl from '../socialUl/socialUl'
 import DownloadButton from '../downloadBtn/downloadBtn'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 // import Link from 'next/link'
 
 
@@ -85,6 +87,9 @@ const Landing = () => {
             </div>
         
         </div>
+        <a href="#latest" className='down-btn'>
+            <FontAwesomeIcon icon={faAnglesDown} />
+        </a>
     </section>
   )
 }

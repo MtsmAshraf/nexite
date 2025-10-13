@@ -3,13 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Federo&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 /* start vars */
 :root{
-  --main-color:#060202;
-  --main-color-semi: #020206ae;
-  --sec-color:#ff1c1c;
-  --sec-color-trans:#f0101080;
   --main-color:#0a0a0a;
   --main-color-semi: #0a0a0aae;
-  --sec-color:#cdcdcb;
+  --sec-color:#4b8beb;
   --sec-color-trans:#ffe3e380;
   --label-color: #aaa;
   --text-color: #fff;
@@ -52,7 +48,7 @@ body{
 }
 html{
   scroll-behavior: smooth;
-  scroll-padding: 70px;
+  /* scroll-padding: 70px; */
 }
 ::placeholder{
   color: var(--label-color);
