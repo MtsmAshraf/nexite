@@ -19,7 +19,8 @@
   object-fit: contain;
   height: 100%;
 }
-.hero .hero-item:nth-child(5) .project-logo img{ /* Al-Naggar logo */
+.hero .hero-item:nth-child(4) .project-logo img,/* Schilddrüsenmedizin logo */
+.hero .hero-item:nth-child(6) .project-logo img{/* Al-Naggar logo */
   filter: invert(100%);
 }
 @media (max-width:640px) {

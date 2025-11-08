@@ -11,6 +11,7 @@ export type Testimonial = {
 
 
 const allTestimonials : Testimonial[] = [
+    // Highest Id: 9
     {
         id: "1",
         name: "Al Salt Al Bahri",
@@ -34,6 +35,14 @@ const allTestimonials : Testimonial[] = [
         country: "Saudi Arabia",
         countryCode: "sa",
         textAr: "فنان ما شاء الله",
+    },
+    {
+        id: "9",
+        name: "Dr. Fairoz Muhammed",
+        title: "Schilddrüsenmedizin",
+        country: "Austria",
+        countryCode: "at",
+        textAr: "لديه صبر ويستمع أكثر مما يتكلم ولا يكثر بالوعود ويحول هذا كله إلى إنجاز ولا يمل من كثرة التعديل ..حتى بعد تسليم العمل ..تعامل بأخلاق عالية. بارك الله فيه."
     },
     {
         id: "4",

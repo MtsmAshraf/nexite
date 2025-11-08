@@ -18,6 +18,7 @@ import icsf from "../../../public/assets/images/icsf.png"
 import alMahdy from "../../../public/assets/images/al-mahdy.png"
 import sahlCars from "../../../public/assets/images/sahl-cars.png"
 import byteStore from "../../../public/assets/images/byte-store.png"
+import schilddruesenmedizin from "../../../public/assets/images/schilddruesenmedizin.jpg"
 
 
 export type Project = {
@@ -29,7 +30,7 @@ export type Project = {
 
 
 const allProjects : Project[] = [
-    // hightest id => 18
+    // hightest id => 19
     {
         id: "13",
         title: "Abdalfttah Academy",
@@ -47,6 +48,12 @@ const allProjects : Project[] = [
         title: "Thrive AI",
         link: "https://thrive-ai-nine.vercel.app/",
         img: thriveAi
+    },
+    {
+        id: "19",
+        title: "Schilddrüsenmedizin",
+        link: "https://www.schilddruesenmedizin.at",
+        img: schilddruesenmedizin
     },
     {
         id: "15",

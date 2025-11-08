@@ -22,6 +22,8 @@ import icsf from "../../../public/assets/images/icsf.png"
 import alMahdy from "../../../public/assets/images/al-mahdy.png" 
 import sahlCars from "../../../public/assets/images/sahl-cars.png" 
 import byteStore from "../../../public/assets/images/byte-store.png" 
+import schilddruesenmedizin from "../../../public/assets/images/schilddruesenmedizin.jpg"
+
 
 import abdelfttahLogo from "../../../public/assets/images/image-removebg-preview.png"
 import elNaggarLogo from "../../../public/assets/images/alnggar-logo.svg" 
@@ -33,6 +35,8 @@ import icsfLogo from "../../../public/assets/images/icsf-logo.png"
 import alMahdyLogo from "../../../public/assets/images/al-mahdy-logo.png"
 import sahlCarsLogo from "../../../public/assets/images/sahl-cars-logo.webp"
 import byteStoreLogo from "../../../public/assets/images/byte-store-logo.png"
+import schilddruesenmedizinLogo from "../../../public/assets/images/schilddruesenmedizin-logo.webp"
+
 
 type TechUsed = {
     id: string,
@@ -57,7 +61,7 @@ export type HeroItemT = {
 }
 
 const heroItems : HeroItemT[] = [
-    // hightest id => 10
+    // hightest id => 11
     {
         id: "5",
         title: "Abdalfttah Academy",
@@ -169,6 +173,46 @@ const heroItems : HeroItemT[] = [
         clientRatingAr: "محترف وسلس في التعامل. يتجاوب بشكل ممتاز مع التغييرات ويحول الأفكار إلى واقع. ممتاز جدا!",
         clientRatingEn: "Professional and smooth in dealing. Responds excellently to changes and turns ideas into reality. Very excellent!",
         itemColor: "#0077fe"
+    },
+    {
+        id: "11",
+        title: "Schilddrüsenmedizin",
+        description: "A website for a Throyd clinic in Vienna of Dr. Fairoz Muhammed ",
+        href: "https://www.schilddruesenmedizin.at/",
+        projectLogo: schilddruesenmedizinLogo,
+        src: schilddruesenmedizin,
+        alt: "Schilddrüsenmedizin - A website for a Throyd clinic in Vienna of Dr. Fairoz Muhammed",
+        techUsed: [
+            {
+                id: "1",
+                name: "Next.js",
+                imgSrc: image20
+            },
+            {
+                id: "2",
+                name: "HTML",
+                imgSrc: image14
+            },
+            {
+                id: "3",
+                name: "CSS",
+                imgSrc: image15
+            },
+            {
+                id: "4",
+                name: "TypeScript",
+                imgSrc: image21
+            },
+            {
+                id: "5",
+                name: "Github",
+                imgSrc: image17
+            },
+        ],
+        clientStars: [1,2,3,4,5],
+        clientRatingAr: "لديه صبر ويستمع أكثر مما يتكلم ولا يكثر بالوعود ويحول هذا كله إلى إنجاز ولا يمل من كثرة التعديل ..حتى بعد تسليم العمل ..تعامل بأخلاق عالية. بارك الله فيه.",
+        clientRatingEn: "He is patient and listens more than he talks. He doesn’t make too many promises and turns everything into real achievements. He never gets tired of making adjustments, even after delivering the work. He behaves with great ethics and manners. May God bless him.",
+        itemColor: "#1197f0"
     },
     {
         id: "7",
