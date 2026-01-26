@@ -19,6 +19,7 @@ import alMahdy from "../../../public/assets/images/al-mahdy.png"
 import sahlCars from "../../../public/assets/images/sahl-cars.png"
 import byteStore from "../../../public/assets/images/byte-store.png"
 import schilddruesenmedizin from "../../../public/assets/images/schilddruesenmedizin.jpg"
+import neuroCure from "../../../public/assets/images/neurocure.jpg"
 
 
 export type Project = {
@@ -30,7 +31,7 @@ export type Project = {
 
 
 const allProjects : Project[] = [
-    // hightest id => 19
+    // hightest id => 20
     {
         id: "13",
         title: "Abdalfttah Academy",
@@ -48,6 +49,12 @@ const allProjects : Project[] = [
         title: "Thrive AI",
         link: "https://thrive-ai-nine.vercel.app/",
         img: thriveAi
+    },
+    {
+        id: "20",
+        title: "NeuroCure",
+        link: "https://neurocure.vercel.app/",
+        img: neuroCure
     },
     {
         id: "19",

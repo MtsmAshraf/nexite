@@ -23,6 +23,7 @@ import alMahdy from "../../../public/assets/images/al-mahdy.png"
 import sahlCars from "../../../public/assets/images/sahl-cars.png" 
 import byteStore from "../../../public/assets/images/byte-store.png" 
 import schilddruesenmedizin from "../../../public/assets/images/schilddruesenmedizin.jpg"
+import neuroCure from "../../../public/assets/images/neurocure.jpg"
 
 
 import abdelfttahLogo from "../../../public/assets/images/image-removebg-preview.png"
@@ -36,6 +37,7 @@ import alMahdyLogo from "../../../public/assets/images/al-mahdy-logo.png"
 import sahlCarsLogo from "../../../public/assets/images/sahl-cars-logo.webp"
 import byteStoreLogo from "../../../public/assets/images/byte-store-logo.png"
 import schilddruesenmedizinLogo from "../../../public/assets/images/schilddruesenmedizin-logo.webp"
+import neuroCureLogo from "../../../public/assets/images/neurocure-logo.png"
 
 
 type TechUsed = {
@@ -61,7 +63,7 @@ export type HeroItemT = {
 }
 
 const heroItems : HeroItemT[] = [
-    // hightest id => 11
+    // hightest id => 12
     {
         id: "5",
         title: "Abdalfttah Academy",
@@ -173,6 +175,46 @@ const heroItems : HeroItemT[] = [
         clientRatingAr: "محترف وسلس في التعامل. يتجاوب بشكل ممتاز مع التغييرات ويحول الأفكار إلى واقع. ممتاز جدا!",
         clientRatingEn: "Professional and smooth in dealing. Responds excellently to changes and turns ideas into reality. Very excellent!",
         itemColor: "#0077fe"
+    },
+    {
+        id: "12",
+        title: "NeuroCure",
+        description: "A website for a Neurology clinic in Vienna of Dr. Muhammed Yacob ",
+        href: "https://neurocure.vercel.app/",
+        projectLogo: neuroCureLogo,
+        src: neuroCure,
+        alt: "NeuroCure - A website for a Neurology clinic in Vienna of Dr. Muhammed Yacob",
+        techUsed: [
+            {
+                id: "1",
+                name: "Next.js",
+                imgSrc: image20
+            },
+            {
+                id: "2",
+                name: "HTML",
+                imgSrc: image14
+            },
+            {
+                id: "3",
+                name: "CSS",
+                imgSrc: image15
+            },
+            {
+                id: "4",
+                name: "TypeScript",
+                imgSrc: image21
+            },
+            {
+                id: "5",
+                name: "Github",
+                imgSrc: image17
+            },
+        ],
+        clientStars: [1,2,3,4,5],
+        clientRatingAr: "",
+        clientRatingEn: "",
+        itemColor: "#c2bb92"
     },
     {
         id: "11",
