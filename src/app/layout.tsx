@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
+import icon from "./favicon.ico"
 
 export const metadata: Metadata = {
   title: "Moatasim Ashraf",
@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   abstract: "The website of The Front-End Developer, Moatasim Ashraf. building websites for Companies, People portfolios, SaaS websites, E-commerce, landing pages and more. موقع مطور الواجهة الأمامية معتصم أشرف، متخصص في إنشاء مواقع الويب للشركات، ومواقع البورتفوليو الشخصية، ومواقع البرمجيات كخدمة (SaaS)، ومواقع التجارة الإلكترونية،صفحات الهبوط وغيرها.",
   creator: "Moatasim Ashraf",
   publisher: "Moatasim Ashraf",
+  icons: icon.src,
   keywords: [
     "Moatasim Ashraf",
     "Frontend Developer",
