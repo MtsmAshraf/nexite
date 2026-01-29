@@ -15,6 +15,7 @@ import image21 from "../../../public/assets/images/logos/logo-typescript.svg"
 import wordpress from "../../../public/assets/images/logos/wordpress-icon.svg"
 import elementor from "../../../public/assets/images/logos/elementor-icon.svg"
 import hostinger from "../../../public/assets/images/logos/hostinger.svg"
+import wpBakery from "../../../public/assets/images/logos/wpbakery.png"
 
 
 import elNaggar from "../../../public/assets/images/al-nggar.png" 
@@ -24,6 +25,7 @@ import sahlCars from "../../../public/assets/images/sahl-cars.png"
 import byteStore from "../../../public/assets/images/byte-store.png" 
 import schilddruesenmedizin from "../../../public/assets/images/schilddruesenmedizin.jpg"
 import neuroCure from "../../../public/assets/images/neurocure.jpg"
+import amgoe from "../../../public/assets/images/AMGOE.jpg"
 
 
 import abdelfttahLogo from "../../../public/assets/images/image-removebg-preview.png"
@@ -38,6 +40,7 @@ import sahlCarsLogo from "../../../public/assets/images/sahl-cars-logo.webp"
 import byteStoreLogo from "../../../public/assets/images/byte-store-logo.png"
 import schilddruesenmedizinLogo from "../../../public/assets/images/schilddruesenmedizin-logo.webp"
 import neuroCureLogo from "../../../public/assets/images/neurocure-logo.png"
+import amgoeLogo from "../../../public/assets/images/AMGOE-logo.png"
 
 
 type TechUsed = {
@@ -63,7 +66,7 @@ export type HeroItemT = {
 }
 
 const heroItems : HeroItemT[] = [
-    // hightest id => 12
+    // hightest id => 13
     {
         id: "5",
         title: "Abdalfttah Academy",
@@ -255,6 +258,36 @@ const heroItems : HeroItemT[] = [
         clientRatingAr: "لديه صبر ويستمع أكثر مما يتكلم ولا يكثر بالوعود ويحول هذا كله إلى إنجاز ولا يمل من كثرة التعديل ..حتى بعد تسليم العمل ..تعامل بأخلاق عالية. بارك الله فيه.",
         clientRatingEn: "He is patient and listens more than he talks. He doesn’t make too many promises and turns everything into real achievements. He never gets tired of making adjustments, even after delivering the work. He behaves with great ethics and manners. May God bless him.",
         itemColor: "#1197f0"
+    },
+    {
+        id: "13",
+        title: "AMGÖ",
+        description: "The Website of AMGÖ - The Arab Medical Accreditation in Austria",
+        href: "https://amgoe.at/",
+        projectLogo: amgoeLogo,
+        src: amgoe,
+        alt: "AMGÖ Project",
+        techUsed: [
+            {
+                id: "1",
+                name: "WordPress",
+                imgSrc: wordpress
+            },
+            {
+                id: "2",
+                name: "wpbakery",
+                imgSrc: wpBakery
+            },
+            {
+                id: "3",
+                name: "Hostinger",
+                imgSrc: hostinger
+            }
+        ],
+        clientStars: [1,2,3,4,5],
+        clientRatingAr: "",
+        clientRatingEn: "",
+        itemColor: "#102d4e"
     },
     {
         id: "7",

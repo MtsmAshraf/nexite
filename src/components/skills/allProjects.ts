@@ -20,6 +20,7 @@ import sahlCars from "../../../public/assets/images/sahl-cars.png"
 import byteStore from "../../../public/assets/images/byte-store.png"
 import schilddruesenmedizin from "../../../public/assets/images/schilddruesenmedizin.jpg"
 import neuroCure from "../../../public/assets/images/neurocure.jpg"
+import amgoe from "../../../public/assets/images/AMGOE.JPG"
 
 
 export type Project = {
@@ -31,7 +32,7 @@ export type Project = {
 
 
 const allProjects : Project[] = [
-    // hightest id => 20
+    // hightest id => 21
     {
         id: "13",
         title: "Abdalfttah Academy",
@@ -61,6 +62,12 @@ const allProjects : Project[] = [
         title: "Schilddrüsenmedizin",
         link: "https://www.schilddruesenmedizin.at",
         img: schilddruesenmedizin
+    },
+    {
+        id: "21",
+        title: "AMGÖ",
+        link: "https://www.amgoe.at",
+        img: amgoe
     },
     {
         id: "15",
