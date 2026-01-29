@@ -20,7 +20,7 @@ import sahlCars from "../../../public/assets/images/sahl-cars.png"
 import byteStore from "../../../public/assets/images/byte-store.png"
 import schilddruesenmedizin from "../../../public/assets/images/schilddruesenmedizin.jpg"
 import neuroCure from "../../../public/assets/images/neurocure.jpg"
-import amgoe from "../../../public/assets/images/amgoe.jpg"
+import amgoe from "../../../public/assets/images/amgo.jpg"
 
 
 export type Project = {
