@@ -262,7 +262,7 @@ const heroItems : HeroItemT[] = [
     {
         id: "13",
         title: "AMGÖ",
-        description: "The Website of AMGÖ - The Arab Medical Accreditation in Austria",
+        description: "The Website of AMGÖ - The Arab Medical Association in Austria",
         href: "https://amgoe.at/",
         projectLogo: amgoeLogo,
         src: amgoe,
