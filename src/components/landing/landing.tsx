@@ -10,6 +10,7 @@ import image7 from "../../../public/assets/images/logos/bootstrap-4.svg"
 import image8 from "../../../public/assets/images/logos/sass-1.svg"
 import image9 from "../../../public/assets/images/logos/icons8-github-100.png"
 import image10 from "../../../public/assets/images/logos/icons8-next.js-100.png"
+import image11 from "../../../public/assets/images/logos/wordpress-icon.svg"
 // import myCv from "../../../public/assets/documents/Moatasim-Ashraf.pdf"
 import myProfile from "../../../public/assets/images/my-profile.png"
 
@@ -37,6 +38,38 @@ const Landing = () => {
                 </div>
                 <h2>Moatasim Ashraf</h2>
                 <h3>Next.js/React.js Front-End Developer</h3>
+                <div className="skills-icons">
+                    <span>
+                        <Image src={image10} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                    </span>
+                    <span>
+                        <Image src={image2} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                    </span>
+                    <span>
+                        <Image src={image3} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                    </span>
+                    <span>
+                        <Image src={image4} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                    </span>
+                    <span>
+                        <Image src={image5} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                    </span>
+                    <span>
+                        <Image src={image6} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                    </span>
+                    <span>
+                        <Image src={image7} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                    </span>
+                    <span>
+                        <Image src={image8} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                    </span>
+                    <span>
+                        <Image src={image9} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                    </span>
+                    <span>
+                        <Image src={image11} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
+                    </span>
+                </div>
                 <p>
                 No Introductions, here is
                 <a href="#skills"> my work</a>
@@ -54,35 +87,6 @@ const Landing = () => {
                 </a>
                 <DownloadButton></DownloadButton>
                 </p>
-                <div className="skills-icons">
-                <span>
-                    <Image src={image10} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
-                </span>
-                <span>
-                    <Image src={image2} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
-                </span>
-                <span>
-                    <Image src={image3} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
-                </span>
-                <span>
-                    <Image src={image4} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
-                </span>
-                <span>
-                    <Image src={image5} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
-                </span>
-                <span>
-                    <Image src={image6} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
-                </span>
-                <span>
-                    <Image src={image7} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
-                </span>
-                <span>
-                    <Image src={image8} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
-                </span>
-                <span>
-                    <Image src={image9} alt="Image" loading={"lazy"} width={2000} height={2000}></Image>
-                </span>
-                </div>
                 <SocialUl />
             </div>
         
