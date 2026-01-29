@@ -287,7 +287,7 @@ const heroItems : HeroItemT[] = [
         clientStars: [1,2,3,4,5],
         clientRatingAr: "",
         clientRatingEn: "",
-        itemColor: "#102d4e"
+        itemColor: "#86a464"
     },
     {
         id: "7",

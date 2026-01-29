@@ -6,7 +6,7 @@
   --main-color:#0a0a0a;
   --main-color-semi: #0a0a0aae;
   --sec-color:#5e5e5e;
-  --sec-color-trans:#ffe3e380;
+  --sec-color-trans:#5e5e5eaa;
   --label-color: #aaa;
   --text-color: #fff;
   --google-color: #4285f4;
@@ -108,7 +108,7 @@ a:hover:before{
   box-shadow: 2px 2px 24px -2px var(--sec-color);
   box-shadow: 2px 2px 34px -20px var(--sec-color);
   background-color: rgba(73, 21, 21, 0.2);
-  border-radius: 8px;
+  border-radius: 30px;
   transition: all 0.2s 0s linear;
   border: 1px solid var(--sec-color);
   padding: 20px 80px;

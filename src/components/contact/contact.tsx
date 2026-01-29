@@ -92,7 +92,7 @@ const Contact = () => {
               <div className='text-area'>
                 <label htmlFor="">Your Message</label>
                 <textarea ref={msg} name='msg'
-                    placeholder="Hi, I think we need to design system for our products at Company X, How soon can you hop on to discuss this?"
+                    placeholder="I think we need to design or build a website for our products at Company X, How soon can you hop on to discuss this?"
                     defaultValue={""}
                 />
               </div>
