@@ -26,7 +26,7 @@
 .hero .hero-item:nth-child(10) .project-logo,/* Al-Mahdy logo */
 .hero .hero-item:nth-child(13) .project-logo{/* Sahl Cars logo */
   /* filter: invert(100%); */
-  background-color: #fff;
+  background-color: #ffffff;
   height: 100px;
   width: 100px;
   padding: 10px;
